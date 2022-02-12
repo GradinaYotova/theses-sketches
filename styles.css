@@ -97,7 +97,7 @@ img{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 5vh;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -196,7 +196,7 @@ h2{
 }
 
 
-.five {
+#five {
   grid-column: 1 / 5;
   grid-row: 5;
   height:auto;
