@@ -10,7 +10,7 @@
   	<body>
 		<div class="wrapper">
 			
-			<div class="one">
+			<div id="one">
 	        	<!-- <h1>Long Story Short...</h1> -->
 	        	    <figure>
           				<img id="magura" src="TITLE.png"/>
@@ -22,10 +22,40 @@
 
 			<div class="two">
           		<img id="indeximg" src="index.png"/>
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+				  	<div class="modal-content">
+				    	<a href="#one" class="goToTop"><i>Index</i></a>
+				  	</div>
+				  	<div class="modal-content">
+				    	<a href="#three" class="goToTop"><i>Abstract</i></a>
+				  	</div>
+				  	<div class="modal-content">
+				    	<p>Before The Beginning</p>
+				  	</div>
+				  	<div class="modal-content">
+				    	<p>Do You Speak Emoji?</p>
+				  	</div>
+				  	<div class="modal-content">
+				    	<p>Participation...Is Not Optional</p>
+				  	</div>
+				  	<div class="modal-content">
+				    	<p>Now You See Me</p>
+				  	</div>
+				  	<div class="modal-content">
+				    	<p>Long Story Short</p>
+				  	</div>
+				  	<div class="modal-content">
+				    	<p>Bibliography</p>
+				  	</div>
+				  	<div class="modal-content">
+				    	<p>Figure Index</p>
+				  	</div>
+				</div>
 			</div>
 			
 
-			<div class="three">
+			<div id="three">
 	        	<h2>Thesis<br>Abstract</h2>
 			</div>
 
@@ -66,5 +96,27 @@
 
 		</div>
 
+
+	<script>
+	var modal = document.getElementById("myModal");
+
+	var btn = document.getElementById("indeximg");
+
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	}
+	</script>
 	</body>
 </html>
