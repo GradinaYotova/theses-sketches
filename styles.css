@@ -138,8 +138,17 @@ img{
   font-size: 1em;
   font-family: Neue-Machina;
   text-decoration: none;
+  color:#000;
   animation: blinker 5s linear infinite;
   cursor: crosshair;
+}
+
+.goToTop:hover{
+  text-decoration:underline;
+}
+
+.goToTop:active{
+  text-decoration:underline;
 }
 
 
@@ -150,9 +159,9 @@ img{
   height:auto;
   padding-top:0;
   margin-top:0;
-  position: sticky;
+/*  position: sticky;
   top: 0;
-  background:#fff;
+  background:#fff;*/
 
 /*  border-style: solid;
   border-radius: 5px;*/
@@ -202,9 +211,9 @@ h2{
   height:auto;
   padding-top:0;
   margin-top:0;
-  position: sticky;
+/*  position: sticky;
   top: 0;
-  background:#fff;
+  background:#fff;*/
 
 /*  border-style: solid;
   border-radius: 5px;*/
@@ -260,3 +269,24 @@ h2{
   line-height:1rem;
 }
 
+
+#eight {
+  grid-column: 1 / 5;
+  grid-row: 8;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+  position: sticky;
+  top: 0;
+  background:#fff;
+
+/*  border-style: solid;
+  border-radius: 5px;*/
+/*  -webkit-user-select: none;
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;*/
+  font-family:Neue-Machina;
+  font-size: 1.4rem;
+  line-height:2.4rem;
+}
