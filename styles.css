@@ -56,8 +56,8 @@ body {
   -ms-user-select: none;      
   user-select: none;*/
   font-family:Neue-MachinaLight;
-  font-size: 1.6rem;
-  line-height:3.5rem;
+  font-size: 2rem;
+  line-height:4.5rem;
   padding:0.2em;
 }
 
@@ -82,7 +82,10 @@ body {
 }
 
 img{
-  width:100%;
+  width:80%;
+  padding:1rem;
+  padding-left:0;
+  padding-bottom:0;
 }
 
 
@@ -103,12 +106,13 @@ img{
   -ms-user-select: none;      
   user-select: none;*/
   font-family:Neue-MachinaLight;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 h2{
   padding:2vw;
-  padding-bottom:3vw;
+  padding-top:2vw;
+  padding-bottom:2vw;
 }
 
 .body-text{
@@ -118,7 +122,7 @@ h2{
 
 
 .four {
-  grid-column: 1 / 4;
+  grid-column: 1 / 5;
   grid-row: 4;
   height:auto;
   padding-top:0;
@@ -150,7 +154,7 @@ h2{
   -ms-user-select: none;      
   user-select: none;*/
   font-family:Neue-MachinaLight;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height:2.7rem;
 }
 
@@ -168,3 +172,29 @@ h2{
   font-size: 1rem;
   line-height:1.4rem;
 }
+
+.seven {
+  grid-column: 1 / 5;
+  grid-row: 7;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+  background:pink;
+/*  -webkit-user-select: none;
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;*/
+}
+
+.magura{
+  width:100%;
+  float:left;
+}
+
+#maguracaption{
+  width:50%;
+  font-family:Neue-MachinaLight;
+  font-size: 0.8rem;
+  line-height:1rem;
+}
+
