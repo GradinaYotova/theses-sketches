@@ -181,6 +181,7 @@ h2{
   padding:2vw;
   padding-top:2vw;
   padding-bottom:2vw;
+  z-index:2;
 }
 
 .body-text{
