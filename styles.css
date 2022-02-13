@@ -181,7 +181,6 @@ h2{
   padding:2vw;
   padding-top:2vw;
   padding-bottom:2vw;
-  z-index:2;
 }
 
 .body-text{
@@ -218,6 +217,7 @@ h2{
   position: sticky;
   top: 0;
   background:#fff;
+  z-index:2;
 
 /*  border-style: solid;
   border-radius: 5px;*/
