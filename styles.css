@@ -50,11 +50,11 @@ body {
 
 .chapter-title{
   padding:2vw;
-  padding-top:2vw;
-  padding-bottom:2vw;
+  padding-top:3vw;
+  padding-bottom:1vh;
   font-family:Neue-Machina;
-  font-size: 1.2rem;
-  line-height:2rem;
+  font-size: 1.5rem;
+  line-height:2.2rem;
 }
 
 .body-text{
