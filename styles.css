@@ -14,7 +14,6 @@
 @media screen and (max-width: 844px) {
 
 
-
 * {
   margin:0;
 }
@@ -28,14 +27,7 @@ body {
   height:1200px;
   margin:0 auto;
   padding-bottom: 1vw;
-/*  background: linear-gradient(to bottom, #ffffff, #d7ddf4);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 4vw #4c68d7;
-  -ms-overflow-style: none; 
-  scrollbar-width: none; */
 }
-
 
 
 .wrapper {
@@ -60,7 +52,7 @@ body {
   -ms-user-select: none;      
   user-select: none;*/
   font-family:Neue-Machina;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height:4rem;
   padding:0.2em;
 }
@@ -85,8 +77,8 @@ body {
   font-size: 0.8rem;
 }
 
-img{
-  width:80%;
+#indeximg{
+  width:100%;
   padding:1rem;
   padding-left:0;
   padding-bottom:0;
@@ -241,50 +233,3 @@ h2{
   word-spacing: 0.1rem;
 }
 
-.seven {
-  grid-column: 1 / 5;
-  grid-row: 7;
-  height:auto;
-  padding-top:0;
-  margin-top:0;
-/*  -webkit-user-select: none;
-  -moz-user-select: none;     
-  -ms-user-select: none;      
-  user-select: none;*/
-}
-
-#magura{
-  padding:0;
-  padding-left:1rem;
-  float:left;
-}
-
-#maguracaption{
-  width:80%;
-  padding-left:1rem;
-  font-family:Neue-MachinaLight;
-  font-size: 0.8rem;
-  line-height:1rem;
-}
-
-
-#eight {
-  grid-column: 1 / 5;
-  grid-row: 8;
-  height:auto;
-  padding-top:0;
-  margin-top:0;
-  position: sticky;
-  top: 0;
-  background:#fff;
-
-/*  border-style: solid;
-  border-radius: 5px;*/
-/*  -webkit-user-select: none;
-  -moz-user-select: none;     
-  -ms-user-select: none;      
-  user-select: none;*/
-  font-family:Neue-Machina;
-  font-size: 1.4rem;
-  line-height:2.4rem;
-}
