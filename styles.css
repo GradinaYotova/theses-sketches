@@ -53,7 +53,6 @@ body {
   padding-bottom:1rem;
 }
 .chapter-title{
-  padding:2vw;
   padding-top:3vw;
   padding-bottom:1vh;
   font-family:Neue-Machina;
@@ -64,13 +63,11 @@ body {
 
 
 .body-text{
-  width:90%;
-  padding:0.5rem;
+  width:100%;
   font-family:Neue-MachinaLight;
   font-size: 1rem;
   line-height:1.4rem;
-  text-indent: 2em;
-/*  word-spacing: 0.1rem;*/
+/*  text-indent: 3em;*/
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -79,13 +76,13 @@ body {
 }
 
 
-#first-paragraph{
+/*#first-paragraph{
   text-indent: 0em;
 }
 
 span{
   text-indent: 0em;
-}
+}*/
 
 .footnote {
     position: relative;
