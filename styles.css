@@ -52,12 +52,13 @@ body {
   width:95vw;
   padding-bottom:1rem;
 }
+
 .chapter-title{
   padding-top:3vw;
   padding-bottom:1vh;
   font-family:Neue-Machina;
-  font-size: 1.5rem;
-  line-height:1.8rem;
+  font-size: 1.8rem;
+  line-height:2.1rem;
 }
 
 
