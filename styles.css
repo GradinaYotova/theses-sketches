@@ -11,12 +11,42 @@
   src: url("Neue-Machina/NeueMachina-Light.otf");
 }
 
+*{
+  scrollbar-width: none;
+}
+
+*{scrollbar-width: none;user-drag: none; user-select: none;-moz-user-select: none;-webkit-user-drag: none;-webkit-user-select: none;-ms-user-select: none;}
+*::-webkit-scrollbar { width: 0 !important }
+*{ -ms-overflow-style: none;scrollbar-width: none;}
+
+
 @media screen and (max-width: 844px) {
+
+
+*{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+*::-webkit-scrollbar {
+      -webkit-appearance: none;
+      display: none;
+      width: 0 !important
+      background: transparent;
+  }
 
 
 * {
   margin:0;
 }
+
+
 
 #first{
   text-indent: 0em;
@@ -24,10 +54,12 @@
 
 body {
   max-width: 95vw;
+  overflow-x: hidden;
   height:1200px;
   margin:0 auto;
   padding-bottom: 1vw;
 }
+
 
 
 .wrapper {
@@ -37,6 +69,8 @@ body {
   grid-auto-rows: auto;
   padding:1vw;
 }
+
+
 
 #one {
   grid-column: 1 / 5;
