@@ -66,7 +66,7 @@ body {
 }
 
 .two {
-  grid-column: 4 / 5;
+  grid-column: 3 / 5;
   grid-row: 2;
   height:auto;
   padding-top:0;
@@ -92,6 +92,11 @@ img{
   padding-bottom:0;
 }
 
+.two img{
+  width:50%;
+  float:right;
+}
+
 
 .modal {
   display: none; /* Hidden by default */
@@ -103,13 +108,12 @@ img{
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #000;
+  opacity: .8;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -120,10 +124,9 @@ img{
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #000;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 2rem;
 }
 
 .close:hover,
@@ -134,20 +137,20 @@ img{
 }
 
 
-.goToTop{
+.index{
   font-size: 1em;
   font-family: Neue-Machina;
   text-decoration: none;
-  color:#000;
+  color:#fff;
   animation: blinker 5s linear infinite;
   cursor: crosshair;
 }
 
-.goToTop:hover{
+.index:hover{
   text-decoration:underline;
 }
 
-.goToTop:active{
+.index:active{
   text-decoration:underline;
 }
 
