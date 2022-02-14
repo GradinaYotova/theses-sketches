@@ -16,8 +16,9 @@
 *{
   margin:0;
   -ms-overflow-style: none;
-  scrollbar-width: none;
   overscroll-behavior: none;
+  overscroll-behavior-y: none;
+  scrollbar-width: none;
   user-drag: none; 
   user-select: none;
   -moz-user-select: none;
