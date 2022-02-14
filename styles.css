@@ -14,6 +14,10 @@
 @media screen and (max-width: 844px) {
 
 
+html{
+  overflow-x: hidden;
+}
+
 *{
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -35,13 +39,9 @@
       background: transparent;
   }
 
-html{
-  overflow-y: auto;
-}
 
 body {
   max-width: 95vw;
-  overflow-x: hidden;
   height:1200px;
   margin:0 auto;
   padding-bottom: 1vw;
