@@ -56,7 +56,7 @@ body {
 .chapter-title{
   padding-top:3vw;
   padding-bottom:1vh;
-  font-family:Neue-Machina;
+  font-family:Neue-MachinaBold;
   font-size: 1.8rem;
   line-height:2.1rem;
 }
@@ -76,14 +76,6 @@ body {
   margin-inline-end: 0px;
 }
 
-
-/*#first-paragraph{
-  text-indent: 0em;
-}
-
-span{
-  text-indent: 0em;
-}*/
 
 .footnote {
     position: relative;
@@ -123,7 +115,7 @@ span{
 }
 
 .body-text-img{
-  width:100%;
+  width:95%;
   float:left;
   background:blue;
 }
