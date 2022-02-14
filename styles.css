@@ -13,12 +13,13 @@
 
 @media screen and (max-width: 844px) {
 
+
 *{
-  margin:0;
   -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin:0;
   overscroll-behavior: none;
   overscroll-behavior-y: none;
-  scrollbar-width: none;
   user-drag: none; 
   user-select: none;
   -moz-user-select: none;
@@ -28,12 +29,15 @@
 }
 
 *::-webkit-scrollbar {
-      -webkit-appearance: none;
       display: none;
-      width: 0 !important
+      -webkit-appearance: none;
+      width: 0 !important;
       background: transparent;
   }
 
+html{
+  overflow-y: auto;
+}
 
 body {
   max-width: 95vw;
