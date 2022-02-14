@@ -221,11 +221,11 @@ body {
 
 
 #three {
-  grid-column: 1 / 5;
+/*  grid-column: 1 / 5;
   grid-row: 2;
   height:auto;
   padding-top:0;
-  margin-top:0;
+  margin-top:0;*/
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -234,9 +234,9 @@ body {
 }
 
 
-.four {
+#four {
   grid-column: 1 / 5;
-  grid-row: 4;
+  grid-row: 3;
   height:auto;
   padding-top:0;
   margin-top:0;
@@ -244,11 +244,11 @@ body {
 
 
 #five {
-  grid-column: 1 / 5;
+/*  grid-column: 1 / 5;
   grid-row: 5;
   height:auto;
   padding-top:0;
-  margin-top:0;
+  margin-top:0;*/
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -257,7 +257,7 @@ body {
 }
 
 
-.six {
+#six {
   grid-column: 1 / 5;
   grid-row: 6;
   height:auto;
