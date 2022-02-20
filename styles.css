@@ -11,6 +11,293 @@
   src: url("fonts/Neue-Machina/NeueMachina-Light.otf");
 }
 
+html{
+  overflow-x: hidden;
+}
+
+*{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin:0;
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+*::-webkit-scrollbar {
+      display: none;
+      -webkit-appearance: none;
+      width: 0 !important;
+      background: transparent;
+  }
+
+
+.title{
+  font-family:Neue-MachinaBold;
+  font-size: 5rem;
+  line-height:2.5rem;
+  padding:0.5em;
+}
+
+.title-two{
+  font-family:Neue-MachinaBold;
+  font-size: 5rem;
+  line-height:2.5rem;
+  padding:0.5em;
+  float:left;
+}
+ 
+.subtitle{
+  font-family:Neue-MachinaLight;
+  font-size: 0.9rem;
+  line-height:1.1rem;
+  padding:0.2em;
+}
+
+#titleImg{
+  width:40vw;
+  padding-bottom:1rem;
+  padding-right:3vw;
+  padding-left:11vw;
+  filter:blur(5px);
+  top:0;
+  left:0;
+  float:right;
+}
+
+#titleImg:hover{
+  filter:blur(0px);
+}
+
+.chapter-title{
+  padding-top:1vh;
+  padding-bottom:1vh;
+  /*padding-left:15vw;*/
+  font-family:Neue-Machina;
+  font-size: 3rem;
+  line-height:3.2rem;
+}
+
+
+.body-text{
+  width:70%;
+  padding-left:20vw;
+  font-family:Neue-MachinaLight;
+  font-size: 1rem;
+  line-height:1.4rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+.footnote {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration-line: underline;
+    text-decoration-color: #FF0000;
+    text-decoration-style: wavy;
+}
+
+.footnote:hover .footnotetext {
+    visibility: visible;
+}
+
+.footnote .footnotetext {
+    visibility: hidden;
+    width:80%;
+    padding:0.5rem;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: .8;
+    color: #fff;
+    font-family:Neue-MachinaLight;
+    font-size:0.8rem;
+    line-height:1.2rem;
+
+}
+
+
+.bodyfig{
+  width:100%;
+}
+
+.body-text-img{
+  width:95%;
+  float:left;
+  background:blue;
+}
+
+#fig-caption{
+  width:95%;
+  padding-bottom:1rem;
+  font-family:Neue-MachinaLight;
+  font-size:0.7rem;
+  line-height:1rem;
+  text-indent:0;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+  grid-auto-rows: auto;
+  padding:1vw;
+}
+
+
+#one {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  height:auto;
+  padding-top:1.5vh;
+  margin-top:0;
+  background:#fff;
+  border-bottom: 1px solid #000;
+}
+
+#one-title {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
+
+.two {
+  grid-column: 4 / 5;
+  grid-row: 2;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background:#fff;
+  z-index:1;
+  z-index:3;
+}
+
+
+#indexImg{
+  width: 50%;
+  padding:1rem;
+  padding-left:11.5vw;
+  padding-bottom:0;
+}
+
+
+.myIndex {
+  display: none; 
+  position: fixed; 
+  z-index: 5; 
+  padding-top: 5vh;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  margin:auto;
+  overflow: auto; 
+}
+
+.index-content {
+  background-color: #000;
+  opacity: .7;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  margin:1em;
+  width: 95%;
+}
+
+
+.index-content:hover {
+  opacity: 1;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .myIndex {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+
+.index-title{
+  font-size: 1em;
+  font-family: Neue-Machina;
+  text-decoration: none;
+  color:#fff;
+  animation: blinker 5s linear infinite;
+  cursor: crosshair;
+}
+
+.index-title:hover{
+  text-decoration:underline;
+}
+
+.index-title:active{
+  text-decoration:underline;
+}
+
+.close {
+  color: #000;
+  float: center;
+  margin-left:47.5vw;
+  font-size: 2rem;
+}
+
+
+#three {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background:#fff;
+  z-index:2;
+}
+
+
+#four {
+  grid-column: 1 / 5;
+  grid-row: 3;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
+
+
+#five {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background:#fff;
+  z-index:2;
+}
+
+
+#six {
+  grid-column: 1 / 5;
+  grid-row: 6;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
+
+
+
 @media screen and (max-width: 844px) {
 
 
@@ -63,7 +350,7 @@ body {
 }
  
 .subtitle{
-  font-family:Neue-Machina;
+  font-family:Neue-MachinaLight;
   font-size: 0.9rem;
   line-height:1.1rem;
   padding:0.2em;
@@ -73,7 +360,10 @@ body {
 #titleImg{
   width:95vw;
   padding-bottom:1rem;
+  padding-right:0;
+  padding-left:0;
   filter:blur(5px);
+
 }
 
 #titleImg:hover{
@@ -83,6 +373,7 @@ body {
 .chapter-title{
   padding-top:3vw;
   padding-bottom:1vh;
+  padding-left:0;
   font-family:Neue-Machina;
   font-size: 1.8rem;
   line-height:2.1rem;
@@ -92,6 +383,7 @@ body {
 
 .body-text{
   width:100%;
+  padding-left:0;
   font-family:Neue-MachinaLight;
   font-size: 1rem;
   line-height:1.4rem;
@@ -219,10 +511,16 @@ body {
   overflow: auto; 
 }
 
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .myIndex {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
 
 .index-content {
   background-color: #000;
-  opacity: .8;
+  opacity: .7;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -230,6 +528,11 @@ body {
   margin:1rem;
   width: 80%;
 }
+
+.index-content:hover {
+  opacity: 1;
+}
+
 
 .index-title{
   font-size: 1em;
@@ -248,9 +551,11 @@ body {
   text-decoration:underline;
 }
 
+
 .close {
   color: #000;
-  float: right;
+  float: center;
+  margin-left:47.5vw;
   font-size: 2rem;
 }
 
