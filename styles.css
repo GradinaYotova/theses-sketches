@@ -11,6 +11,45 @@
   src: url("fonts/Neue-Machina/NeueMachina-Light.otf");
 }
 
+
+.popup{ 
+    display: block;
+    width: 80vw;
+    left: 45px;
+    bottom: 30px;
+    position: fixed;
+    z-index: 4;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      height: auto;
+   }
+   100% {
+      opacity: 1;
+      height: auto;
+   }
+}
+
+
+.popup_show{
+  animation-name: fadeInDown;
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.66,.12,.49,.89);
+  opacity: 1;
+  height: auto;
+}
+
+.cross {
+  color: #000;
+  float: center;
+  margin-left:37.5vw;
+  font-size: 2rem;
+}
+
+
 html{
   overflow-x: hidden;
 }
@@ -64,15 +103,11 @@ html{
   padding-bottom:1rem;
   padding-right:3vw;
   padding-left:11vw;
-  filter:blur(5px);
   top:0;
   left:0;
   float:right;
 }
 
-#titleImg:hover{
-  filter:blur(0px);
-}
 
 .chapter-title{
   padding-top:1vh;
@@ -186,9 +221,7 @@ html{
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background:#fff;
-  z-index:1;
-  z-index:3;
+  z-index:5;
 }
 
 
@@ -203,7 +236,6 @@ html{
 .myIndex {
   display: none; 
   position: fixed; 
-  z-index: 5; 
   padding-top: 5vh;
   left: 0;
   top: 0;
@@ -249,9 +281,11 @@ html{
   text-decoration:underline;
 }
 
-.index-title:active{
+.index-title:focus{
   text-decoration:underline;
 }
+
+
 
 .close {
   color: #000;
@@ -327,6 +361,44 @@ html{
   }
 
 
+.popup{ 
+    display: block;
+    width: 80vw;
+    left: 45px;
+    bottom: 30px;
+    position: fixed;
+    z-index: 4;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      height: auto;
+   }
+   100% {
+      opacity: 1;
+      height: auto;
+   }
+}
+
+
+.popup_show{
+  animation-name: fadeInDown;
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.66,.12,.49,.89);
+  opacity: 1;
+  height: auto;
+}
+
+.cross {
+  color: #000;
+  float: center;
+  margin-left:37.5vw;
+  font-size: 2rem;
+}
+
+
 body {
   max-width: 95vw;
   height:1200px;
@@ -387,7 +459,6 @@ body {
   font-family:Neue-MachinaLight;
   font-size: 1rem;
   line-height:1.4rem;
-/*  text-indent: 3em;*/
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -421,7 +492,6 @@ body {
     background-color: #000;
     opacity: .8;
     color: #fff;
-   /* text-align: center;*/
     font-family:Neue-MachinaLight;
     font-size:0.8rem;
     line-height:1.2rem;
@@ -459,6 +529,7 @@ body {
 
 
 #one {
+  z-index:1;
   grid-column: 1 / 5;
   grid-row: 1;
   height:auto;
@@ -486,8 +557,7 @@ body {
   position: -webkit-sticky;
   top: 0;
   background:#fff;
-  z-index:1;
-  z-index:3;
+  z-index:5;
 }
 
 
@@ -502,7 +572,6 @@ body {
 .myIndex {
   display: none; 
   position: fixed; 
-  z-index: 5; 
   padding-top: 5vh;
   left: 0;
   top: 0;
@@ -561,11 +630,6 @@ body {
 
 
 #three {
-/*  grid-column: 1 / 5;
-  grid-row: 2;
-  height:auto;
-  padding-top:0;
-  margin-top:0;*/
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -584,11 +648,6 @@ body {
 
 
 #five {
-/*  grid-column: 1 / 5;
-  grid-row: 5;
-  height:auto;
-  padding-top:0;
-  margin-top:0;*/
   position: sticky;
   position: -webkit-sticky;
   top: 0;

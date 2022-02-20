@@ -10,6 +10,12 @@
 
   	<body>
 		<div class="wrapper">
+
+			<div class="popup">
+    			<span class="cross">&times;</span>
+    			<img style="width:100%" src="img/test.png">
+			</div>
+
 			
 			<div id="one">
 				<h1 class="title">
@@ -82,7 +88,6 @@
 					</p>  
         		</div>
 			</div>
-
 
 			
 			<div id="six">
@@ -220,33 +225,28 @@
 
 		</div>
 
+	<script>
+		var modal = document.getElementById("myIndex");
 
+			var btn = document.getElementById("indexImg");
 
+			var span = document.getElementsByClassName("close")[0];
 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
 
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
 
-
-
-		<script>
-			var modal = document.getElementById("myIndex");
-
-				var btn = document.getElementById("indexImg");
-
-				var span = document.getElementsByClassName("close")[0];
-
-				btn.onclick = function() {
-				  modal.style.display = "block";
+			window.onclick = function(event) {
+				if (event.target == modal) {
+				  	modal.style.display = "none";
 				}
-
-				span.onclick = function() {
-				  modal.style.display = "none";
-				}
-
-				window.onclick = function(event) {
-				  if (event.target == modal) {
-				    modal.style.display = "none";
-				  }
-				}
-		</script>
+			}
+	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script><script  src="./script.js"></script>
 	</body>
 </html>

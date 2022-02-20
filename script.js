@@ -17,3 +17,22 @@ var modal = document.getElementById("myIndex");
 	    modal.style.display = "none";
 	  }
 	}
+
+
+
+var popup = $('.popup');
+$(window).scroll(function(){
+   
+  if($(window).scrollTop() > $(document).height()/6){
+    popup.addClass('popup_show'); 
+  };
+  
+  $( '.cross' ).click(function() {
+  		popup.css('display', 'none');
+	});
+  
+  
+});
+
+
+
