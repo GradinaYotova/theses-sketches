@@ -12,42 +12,40 @@
 }
 
 
-.popup{ 
-    display: block;
-    width: 80vw;
-    left: 45px;
-    bottom: 30px;
-    position: fixed;
-    z-index: 4;
-    opacity: 0;
+#reveal1, #reveal2  {
+  opacity: 0;
+  position:absolute;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-@keyframes fadeInDown {
-   0% {
-      opacity: 0;
-      height: auto;
-   }
-   100% {
-      opacity: 1;
-      height: auto;
-   }
-}
-
-
-.popup_show{
-  animation-name: fadeInDown;
-  animation-duration: 0.7s;
-  animation-timing-function: cubic-bezier(.66,.12,.49,.89);
+#reveal1.visible, #reveal2.visible  {
   opacity: 1;
-  height: auto;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 
-.cross {
+#reveal1 {top:150vh;}
+#reveal2 {top:350vh;}
+
+.cross, .crosstwo {
   color: #000;
   float: center;
-  margin-left:37.5vw;
+  margin-left:47.5vw;
   font-size: 2rem;
 }
+
 
 
 html{
@@ -184,6 +182,11 @@ html{
   text-indent:0;
 }
 
+
+.layertwo{
+  position:absolute;
+  z-index:10;
+}
 
 .wrapper {
   display: grid;
@@ -332,6 +335,14 @@ html{
 
 
 
+
+
+
+
+
+
+
+
 @media screen and (max-width: 844px) {
 
 
@@ -359,44 +370,6 @@ html{
       width: 0 !important;
       background: transparent;
   }
-
-
-.popup{ 
-    display: block;
-    width: 80vw;
-    left: 45px;
-    bottom: 30px;
-    position: fixed;
-    z-index: 4;
-    opacity: 0;
-}
-
-@keyframes fadeInDown {
-   0% {
-      opacity: 0;
-      height: auto;
-   }
-   100% {
-      opacity: 1;
-      height: auto;
-   }
-}
-
-
-.popup_show{
-  animation-name: fadeInDown;
-  animation-duration: 0.7s;
-  animation-timing-function: cubic-bezier(.66,.12,.49,.89);
-  opacity: 1;
-  height: auto;
-}
-
-.cross {
-  color: #000;
-  float: center;
-  margin-left:37.5vw;
-  font-size: 2rem;
-}
 
 
 body {

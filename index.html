@@ -5,17 +5,27 @@
 	    <title>Long Story Short</title>
 	    <meta content="width=device-width, initial-scale=1" name="viewport" />
   		<link rel="icon" href="img/web-icon.png">
+  		<script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
   		<link rel="stylesheet" href="styles.css">
 	</head>
 
   	<body>
-		<div class="wrapper">
+	<script>
+		var controller = new ScrollMagic.Controller();
+	</script>
 
-			<div class="popup">
-    			<span class="cross">&times;</span>
-    			<img style="width:100%" src="img/test.png">
+		<div class="layertwo">
+			<div id="reveal1">
+				<span class="cross">&times;</span>
+				<img  style="width:95vw;" src="img/test.png">
 			</div>
+			<div id="reveal2">
+				<span class="crosstwo">&times;</span>
+				<img  style="width:95vw;" src="img/test2.png">
+			</div>
+		</div>
 
+		<div class="wrapper">
 			
 			<div id="one">
 				<h1 class="title">
@@ -88,7 +98,6 @@
 					</p>  
         		</div>
 			</div>
-
 			
 			<div id="six">
 
@@ -223,7 +232,32 @@
         		</div>
 			</div>
 
+
 		</div>
+
+
+	<script>
+		// build scene
+		new ScrollMagic.Scene({
+			triggerElement: "#reveal1",
+			triggerHook: 0.9, // show, when scrolled 10% into view
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			offset: 10 // move trigger to center of element
+			})
+			.setClassToggle("#reveal1", "visible") // add class to reveal
+			.addTo(controller);
+
+			new ScrollMagic.Scene({
+			triggerElement: "#reveal2",
+			triggerHook: 0.9, // show, when scrolled 10% into view
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			offset: 10 // move trigger to center of element
+			})
+			.setClassToggle("#reveal2", "visible") // add class to reveal
+			.addTo(controller);
+
+	</script>
+
 
 	<script>
 		var modal = document.getElementById("myIndex");

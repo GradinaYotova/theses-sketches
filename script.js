@@ -20,18 +20,16 @@ var modal = document.getElementById("myIndex");
 
 
 
-var popup = $('.popup');
-$(window).scroll(function(){
-   
-  if($(window).scrollTop() > $(document).height()/6){
-    popup.addClass('popup_show'); 
-  };
-  
-  $( '.cross' ).click(function() {
-  		popup.css('display', 'none');
+var popup = $('#reveal1');
+var popuptwo = $('#reveal2');
+$(window).scroll(function(){  
+
+	$( '.cross' ).click(function() {
+	  	popup.css('display', 'none');
 	});
-  
-  
+		$( '.crosstwo' ).click(function() {
+	  	popuptwo.css('display', 'none');
+	});
 });
 
 
