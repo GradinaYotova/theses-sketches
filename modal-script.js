@@ -19,11 +19,15 @@ $( ".index-title" ).click(function() {
 
 
 $( "#indexImg" ).click(function() {
-	$('.layertwo').css('z-index', '5');			
+	$('.layertwo').css('z-index', '5');				
 });
 
 $( ".close" ).click(function() {
-	$('.layertwo').css('z-index', '10');				
+	$('.layertwo').css('z-index', '10');			
 });
 
 
+$( ".index-title" ).click(function() {
+	$('.layertwo').css('z-index', '10');
+	$('.layertwo').css('left', '0');
+});
