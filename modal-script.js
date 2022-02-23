@@ -23,3 +23,4 @@ $( ".index-title" ).click(function() {
   			$(".myIndex").hide();
 });
 
+
