@@ -4,26 +4,17 @@ var modal = document.getElementById("myIndex");
 
 	var span = document.getElementsByClassName("close")[0];
 
-	var body = document.querySelector("body"); 
-
 	btn.onclick = function() {
 	  modal.style.display = "block";
 	}
-
 
 	span.onclick = function() {
 	  modal.style.display = "none";
 	}
 
-	// window.onclick = function(event) {
-	//   if (event.target == modal) {
-	//     modal.style.display = "none";
-	//   }
-	// }
-
 
 $( ".index-title" ).click(function() {
-  			$(".myIndex").hide();
+  		$(".myIndex").hide();
 });
 
 
@@ -32,5 +23,14 @@ $( "#indexImg" ).click(function() {
 });
 
 $( ".close" ).click(function() {
-					
+	$('.layertwo').css('z-index', '10');				
 });
+
+
+// $( "#indexImg" ).click(function() {
+// 	$('.wrapper').css('pointer-events', 'none');			
+// });
+
+// $( ".close" ).click(function() {
+// 	$('.wrapper').css('pointer-events', 'auto');				
+// });

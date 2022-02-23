@@ -74,7 +74,7 @@ body {
 #reveal2 {top:300vh;}
 #reveal3 {top:450vh;}
 
-.cross, .crosstwo {
+.cross, .crosstwo, .crossthree {
   color: #000;
   float: center;
   margin-left:0;
@@ -197,9 +197,8 @@ body {
 
 .layertwo{
   position:absolute;
+  height:0px;
   z-index:10;
-  background:orange;
-  margin-top: 80vh;;
 }
 
 .wrapper {
@@ -263,6 +262,7 @@ body {
   height: 100%; 
   overflow: auto; 
 }
+
 
 body.myIndex-open {
     overflow: hidden;
