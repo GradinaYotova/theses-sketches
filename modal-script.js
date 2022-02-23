@@ -27,10 +27,3 @@ $( ".close" ).click(function() {
 });
 
 
-// $( "#indexImg" ).click(function() {
-// 	$('.wrapper').css('pointer-events', 'none');			
-// });
-
-// $( ".close" ).click(function() {
-// 	$('.wrapper').css('pointer-events', 'auto');				
-// });

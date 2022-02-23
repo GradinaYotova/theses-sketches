@@ -54,11 +54,15 @@ body {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#reveal1 img, #reveal2 img, #reveal3 img {
+  width:102vw;
 }
 
 #reveal1.visible, #reveal2.visible, #reveal3.visible  {
@@ -77,7 +81,8 @@ body {
 .cross, .crosstwo, .crossthree {
   color: #000;
   float: center;
-  margin-left:0;
+  margin-left:0rem;
+  padding-left:0.4rem;
   font-size: 1rem;
   width:100vw;
   background:#fff;
@@ -199,6 +204,9 @@ body {
   position:absolute;
   height:0px;
   z-index:10;
+  float:left;
+  right:0;
+  left:0;
 }
 
 .wrapper {

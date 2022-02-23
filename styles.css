@@ -52,12 +52,19 @@ body {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
   transform: scale(0.9);
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  filter:drop-shadow(2px 2px 4px #000000);
 }
+
+#reveal1 img, #reveal2 img, #reveal3 img {
+  width:50vw;
+  height:auto;
+}
+
 
 #reveal1.visible, #reveal2.visible, #reveal3.visible  {
   opacity: 1;
@@ -70,13 +77,16 @@ body {
 
 #reveal1 {top:180vh;}
 #reveal2 {top:350vh;}
-#reveal3 {top:400vh;}
+#reveal3 {top:500vh;}
 
 .cross, .crosstwo, .crossthree {
   color: #000;
   float: center;
-  margin-left:47.5vw;
-  font-size: 2rem;
+  margin-left:0rem;
+  padding-left:0.4rem;
+  font-size: 1.5rem;
+  width:auto;
+  background:#fff;
 }
 
 
@@ -118,14 +128,13 @@ body {
   padding-bottom:1vh;
   /*padding-left:15vw;*/
   font-family:Neue-Machina;
-  font-size: 3rem;
-  line-height:3.2rem;
+  font-size: 2rem;
+  line-height:2.2rem;
 }
 
 
 .body-text{
   width:70%;
-  padding-left:20vw;
   font-family:Neue-MachinaLight;
   font-size: 1rem;
   line-height:1.4rem;
@@ -190,9 +199,12 @@ body {
 
 
 .layertwo{
-  position:absolute;
+  position:relative;
   z-index:10;
   height:0;
+  top:0;
+  right: 46em;
+  float:right;
 }
 
 .wrapper {
@@ -236,9 +248,9 @@ body {
 
 
 #indexImg{
-  width: 50%;
+  width: 40%;
   padding:1rem;
-  padding-left:11.5vw;
+  padding-left:13vw;
   padding-bottom:0;
 }
 
