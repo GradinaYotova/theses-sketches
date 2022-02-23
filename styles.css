@@ -41,6 +41,7 @@ body {
   height:1200px;
   margin:0 auto;
   padding-bottom: 1vw;
+  overflow-x:hidden;
 }
 
 
@@ -91,14 +92,14 @@ body {
 
 .title{
   font-family:Neue-MachinaBold;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height:2.5rem;
   padding:0.5em;
 }
 
 .title-two{
   font-family:Neue-MachinaBold;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height:2.5rem;
   padding:0.5em;
   float:left;
@@ -109,10 +110,11 @@ body {
   font-size: 0.9rem;
   line-height:1.1rem;
   padding:0.2em;
+  margin-top: -10vh;
 }
 
 #titleImg{
-  width:40vw;
+  width:35vw;
   padding-bottom:1rem;
   padding-right:3vw;
   padding-left:11vw;

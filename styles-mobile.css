@@ -44,6 +44,7 @@ body {
   height:1200px;
   margin:0 auto;
   padding-bottom: 1vw;
+  overflow-x:hidden;
 }
 
 #reveal1, #reveal2, #reveal3  {
