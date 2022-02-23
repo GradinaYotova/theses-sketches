@@ -125,7 +125,6 @@ body {
 .chapter-title{
   padding-top:1vh;
   padding-bottom:1vh;
-  /*padding-left:15vw;*/
   font-family:Neue-Machina;
   font-size: 2rem;
   line-height:2.2rem;
@@ -198,12 +197,12 @@ body {
 
 
 .layertwo{
-  position:relative;
+/*  position:relative;*/
   z-index:10;
   height:0;
-  top:0;
+/*  top:0;
   right: 46em;
-  float:right;
+  float:right;*/
 }
 
 .wrapper {

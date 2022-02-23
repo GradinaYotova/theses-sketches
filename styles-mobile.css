@@ -203,8 +203,8 @@ body {
 .layertwo{
   height:0px;
   z-index:10;
-  float:left;
-  right:0;
+/*  float:left;
+  right:0;*/
 }
 
 .wrapper {
