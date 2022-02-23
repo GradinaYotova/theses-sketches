@@ -201,10 +201,12 @@ body {
 }
 
 .layertwo{
+  position:relative;
   height:0px;
   z-index:10;
-/*  float:left;
-  right:0;*/
+  float:left;
+  right:0;
+/*  left:0.7em;*/
 }
 
 .wrapper {
