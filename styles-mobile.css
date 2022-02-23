@@ -62,7 +62,7 @@ body {
 }
 
 #reveal1 img, #reveal2 img, #reveal3 img {
-  width:102vw;
+  width:95vw;
 }
 
 #reveal1.visible, #reveal2.visible, #reveal3.visible  {
@@ -82,7 +82,7 @@ body {
   color: #000;
   float: center;
   margin-left:0rem;
-  padding-left:0.4rem;
+  padding-left:0;
   font-size: 1rem;
   width:100vw;
   background:#fff;
@@ -206,7 +206,7 @@ body {
   z-index:10;
   float:left;
   right:0;
-  left:0;
+  left:0.7em;
 }
 
 .wrapper {

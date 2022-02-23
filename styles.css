@@ -57,7 +57,6 @@ body {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  filter:drop-shadow(2px 2px 4px #000000);
 }
 
 #reveal1 img, #reveal2 img, #reveal3 img {
