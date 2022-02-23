@@ -38,10 +38,17 @@ html{
 
 body {
   max-width: 95vw;
-  height:1200px;
+  height:auto;
   margin:0 auto;
   padding-bottom: 1vw;
   overflow-x:hidden;
+  
+}
+
+.myBody {
+  height: 100vh;
+  position:relative; 
+  overscroll-behavior: contain;
 }
 
 
@@ -351,3 +358,5 @@ body {
   padding-top:0;
   margin-top:0;
 }
+
+
