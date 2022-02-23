@@ -198,6 +198,8 @@ body {
 .layertwo{
   position:absolute;
   z-index:10;
+  background:orange;
+  margin-top: 80vh;;
 }
 
 .wrapper {
@@ -239,7 +241,7 @@ body {
   position: -webkit-sticky;
   top: 0;
 /*  background:#fff;*/
-  z-index:50;
+  z-index:6;
 }
 
 
