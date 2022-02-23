@@ -27,17 +27,21 @@ var controller = new ScrollMagic.Controller();
 			})
 			.setClassToggle("#reveal3", "visible") // add class to reveal
 			.addTo(controller);
-			
 
+
+
+var popup = $('#reveal1');
+var popuptwo = $('#reveal2');
+var popupthree = $('#reveal3');
 $(window).scroll(function(){  
 
 	$( '.cross' ).click(function() {
-	  	$('#reveal1').css('display', 'none');
+	  	popup.css('display', 'none');
 	});
 		$( '.crosstwo' ).click(function() {
-	  	$('#reveal2').css('display', 'none');
+	  	popuptwo.css('display', 'none');
 	});
 		$( '.crossthree' ).click(function() {
-	  	$('#reveal3').css('display', 'none');
+	  	popupthree.css('display', 'none');
 	});
 });
