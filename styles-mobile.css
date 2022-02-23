@@ -263,20 +263,15 @@ body {
   overflow: auto; 
 }
 
-
-body.myIndex-open {
-    overflow: hidden;
-}
-
 .index-content {
   background-color: #000;
   opacity: .7;
   margin: auto;
-  padding: 20px;
+  padding: 1em;
   border: 1px solid #888;
   border-radius: 6px;
   margin:1rem;
-  width: 80%;
+  width: 83.5%;
 }
 
 .index-content:hover {
