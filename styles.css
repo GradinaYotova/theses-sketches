@@ -13,6 +13,7 @@
 
 html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -93,6 +94,7 @@ body {
   font-size: 1.5rem;
   width:auto;
   background:#fff;
+  z-index:50;
 }
 
 
@@ -204,7 +206,7 @@ body {
 }
 
 
-.layertwo{
+.popuplayer{
   position:relative;
   z-index:10;
   height:0;
