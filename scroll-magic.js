@@ -33,17 +33,21 @@ var controller = new ScrollMagic.Controller();
 var popup = $('#reveal1');
 var popuptwo = $('#reveal2');
 var popupthree = $('#reveal3');
-$(window).scroll(function(){  
+
+
 
 	$( '.cross' ).click(function() {
 	  	popup.css('display', 'none');
 	});
-		$( '.crosstwo' ).click(function() {
-	  	popuptwo.css('display', 'none');
+	
+	$( '.crosstwo' ).click(function() {
+		popuptwo.css('display', 'none');
 	});
-		$( '.crossthree' ).click(function() {
-	  	popupthree.css('display', 'none');
+
+	$( '.crossthree' ).click(function() {
+		popupthree.css('display', 'none');
 	});
-});
+
+
 
 
