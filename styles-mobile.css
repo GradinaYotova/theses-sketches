@@ -373,3 +373,20 @@ body {
   padding-top:0;
   margin-top:0;
 }
+
+#nine {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  background:#fff;
+  z-index:2;
+}
+
+
+#ten {
+  grid-column: 1 / 5;
+  grid-row: 6;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
