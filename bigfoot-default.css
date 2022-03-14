@@ -78,12 +78,12 @@
 }
 .bigfoot-footnote {
   position: absolute;
-  z-index: 1;
+  z-index: 2; 
   top: 0;
   left: 0;
   display: inline-block;
   box-sizing: border-box;
-  max-width: 90%;
+  max-width: 60vw;
   margin: 1.96924em 0;
   background: #fafafa;
   opacity: 0;
@@ -199,7 +199,7 @@
 .bigfoot-footnote__wrapper {
   position: relative;
   z-index: 1;
-  width: 35em;
+  width: 60em;
   background-color: #000;
   display: inline-block;
   box-sizing: inherit;
@@ -213,7 +213,6 @@
   position: relative;
   z-index: 2;
   display: inline-block;
-  max-height: 15em;
   padding: 0.5em;
   box-sizing: inherit;
   overflow: auto;

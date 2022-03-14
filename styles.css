@@ -49,6 +49,13 @@ body {
   overscroll-behavior: contain;
 }
 
+p{
+  width:95vw;
+}
+
+.text-footnote{
+  width:100%;
+}
 
 #reveal1, #reveal2, #reveal3  {
   opacity: 0;
