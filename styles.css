@@ -338,7 +338,6 @@ p{
   color:#000;
   animation: blinker 5s linear infinite;
   cursor: crosshair;
-  list-style-position: inside;
 }
 
 .index-title::before{
@@ -347,16 +346,6 @@ p{
   left:0;
   top:0;
 }
-
-
-.index-title:hover{
-  text-decoration:underline;
-}
-
-.index-title:active{
-  text-decoration:underline;
-}
-
 
 .close {
   color: #000;
