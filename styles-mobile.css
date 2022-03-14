@@ -160,7 +160,7 @@ p{
 }
 
 #bibliography{
-  width:40vw;
+  width:95vw;
   font-family:Neue-MachinaLight;
   font-size: 0.5rem;
   line-height:0.8rem;
@@ -172,7 +172,7 @@ p{
 }
 
 .biblio{
-  columns: 2;
+  columns: 1;
 }
 
 .footnote {
@@ -270,6 +270,7 @@ p{
   height:auto;
   padding-top:0;
   margin-top:0;
+/*  margin-right:0.5em;*/
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 0;
@@ -278,13 +279,19 @@ p{
 
 
 #indexImg{
-  width:100%;
-  padding:1rem;
-  padding-top:1rem;
+  width:60%;
   padding-left:0;
   padding-bottom:0;
+  position:absolute;
+  left:40%;
+  top:0.9em;
 }
 
+#icon{
+  font-size:1rem;
+  font-family:Neue-Machina;
+  padding-top:1rem;
+}
 
 .myIndex {
   display: none; 

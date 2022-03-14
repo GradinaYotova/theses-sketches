@@ -275,13 +275,18 @@ p{
 
 
 #indexImg{
-  width: 40%;
-  padding:1rem;
+  width: 100%;
+/*  padding:1rem;
   padding-top:1.5rem;
-  padding-left:13vw;
+  padding-left:13vw;*/
   padding-bottom:0;
 }
 
+#icon{
+  font-size:1rem;
+  font-family:Neue-Machina;
+  padding-top:0.8rem;
+}
 
 .myIndex {
   display: none; 
