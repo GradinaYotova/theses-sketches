@@ -149,6 +149,21 @@ body {
   margin-inline-end: 0px;
 }
 
+#bibliography{
+  width:40vw;
+  font-family:Neue-MachinaLight;
+  font-size: 0.5rem;
+  line-height:0.8rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;  
+}
+
+.biblio{
+  columns: 2;
+}
 
 .footnote {
     position: relative;
@@ -411,6 +426,40 @@ body {
 #twelve {
   grid-column: 1 / 5;
   grid-row: 7;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
+
+#thirteen {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  background:#fff;
+  z-index:2;
+}
+
+
+#fourteen {
+  grid-column: 1 / 5;
+  grid-row: 8;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
+
+#fiveteen {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  background:#fff;
+  z-index:2;
+}
+
+
+#sixteen {
+  grid-column: 1 / 5;
+  grid-row: 9;
   height:auto;
   padding-top:0;
   margin-top:0;
