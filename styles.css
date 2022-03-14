@@ -357,10 +357,26 @@ body {
 
 #six {
   grid-column: 1 / 5;
-  grid-row: 6;
+  grid-row: 4;
   height:auto;
   padding-top:0;
   margin-top:0;
 }
 
+#seven {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  background:#fff;
+  z-index:2;
+}
+
+
+#eight {
+  grid-column: 1 / 5;
+  grid-row: 5;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
 
