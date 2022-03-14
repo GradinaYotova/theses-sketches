@@ -336,7 +336,6 @@ p{
   font-family: Neue-MachinaBold;
   text-decoration: none;
   color:#000;
-  animation: blinker 5s linear infinite;
   cursor: crosshair;
 }
 
