@@ -29,10 +29,21 @@ var controller = new ScrollMagic.Controller();
 			.addTo(controller);
 
 
+			new ScrollMagic.Scene({
+			triggerElement: "#reveal4",
+			triggerHook: 0.4, // show, when scrolled 10% into view
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			offset: 10 // move trigger to center of element
+			})
+			.setClassToggle("#reveal4", "visible") // add class to reveal
+			.addTo(controller);
+
+
 
 var popup = $('#reveal1');
 var popuptwo = $('#reveal2');
 var popupthree = $('#reveal3');
+var popupfour = $('#reveal4');
 
 
 
@@ -45,6 +56,10 @@ var popupthree = $('#reveal3');
 	});
 
 	$( '.crossthree' ).click(function() {
+		popupthree.css('display', 'none');
+	});
+
+	$( '.crossfour' ).click(function() {
 		popupthree.css('display', 'none');
 	});
 
