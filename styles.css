@@ -73,8 +73,11 @@ p{
 }
 
 #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img {
-  width:50vw;
-  height:auto;
+  width:85vw;
+  margin:0;
+  padding:0;
+  box-shadow: 0 0 8px #000;
+
 }
 
 
@@ -92,22 +95,32 @@ p{
 #reveal3 {top:450vh;left:5vw;}
 #reveal4 {top:680vh;left:5vw;}
 
-.cross, .crosstwo, .crossthree, .crossfour  {
-  color: #000;
-  float: center;
-  margin-left:0rem;
-  padding-left:0.4rem;
-  font-size: 1.5rem;
+.cross, .crosstwo, .crossthree, .crossfour {
+  color: #DC143C;
+  text-shadow: 0 0 2px #000;
 /*  background:#fff;*/
-  z-index:50;
+  margin-left:0rem;
+  padding-left:0.2em;
+  font-size: 2rem;
+  width:100vw;
 }
-
 
 .title{
   font-family:Neue-MachinaBold;
   font-size: 4rem;
   line-height:2.5rem;
   padding:0.5em;
+}
+
+
+.hyper-text{
+  font-family:Neue-MachinaBold;
+  font-size: 2.2rem;
+  line-height:2.5rem;
+  padding:0.2em;
+  background:#fff;
+  width:70vw;
+  box-shadow: 0 0 10px #000;
 }
 
 .title-two{
