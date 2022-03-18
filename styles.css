@@ -444,7 +444,10 @@ body {
 #nine {
   position: -webkit-sticky !important;
   position: sticky !important;
+<<<<<<< Updated upstream
   height:auto;
+=======
+>>>>>>> Stashed changes
   top: 0;
   background:#fff;
   z-index:2;
@@ -458,6 +461,7 @@ body {
   padding-top:0;
   margin-top:0;
 }
+<<<<<<< Updated upstream
 
 
 #eleven {
@@ -514,3 +518,5 @@ body {
   margin-top:0;
 }
 
+=======
+>>>>>>> Stashed changes
