@@ -18,8 +18,8 @@ html{
 }
 
 
-
 *{
+  /* font-size: 0; */
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin:0;
@@ -42,22 +42,18 @@ html{
 
 
 body {
-/*  max-width: 95vw;*/
-  max-width: 100vw;
+  max-width: 100%;
   margin:0 auto;
   padding-bottom: 1vw;
   overflow-x:hidden;
 }
 
 .myBody {
-  height: 100vh;
+  height: 99vh;
   position:relative; 
   overscroll-behavior: contain;
 }
 
-p{
-  width:95vw;
-}
 
 .text-footnote{
   width:100%;
@@ -79,7 +75,7 @@ p{
 }
 
 #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img {
-  width:85vw;
+  width:80vw;
   margin:0;
   padding:0;
   box-shadow: 0 0 8px #000;
@@ -98,16 +94,16 @@ p{
 #reveal1 {top:150vh; left:5vw;}
 #reveal2 {top:300vh;left:5vw;}
 #reveal3 {top:450vh;left:5vw;}
-#reveal4 {top:680vh;left:5vw;}
+#reveal4 {top:680vh;left:5vw;} 
 
 .cross, .crosstwo, .crossthree, .crossfour {
-  color: #DC143C;
-  text-shadow: 0 0 2px #000;
+  /* color: #DC143C;
+  text-shadow: 0 0 2px #000; */
 /*  background:#fff;*/
-  margin-left:0rem;
+  /* margin-left:0rem;
   padding-left:0.2em;
   font-size: 2rem;
-  width:100vw;
+  width:100vw; */
 }
 
 .title{
@@ -119,12 +115,12 @@ p{
 
 .hyper-text{
   font-family:Neue-MachinaBold;
-  font-size: 2.2rem;
+  /* font-size: 2.2rem;
   line-height:2.5rem;
-  padding:0.2em;
+  padding:0.2em; */
   background:#fff;
   width:70vw;
-  box-shadow: 0 0 10px #000;
+  /* box-shadow: 0 0 10px #000; */
 }
 
 .title-two{
@@ -149,16 +145,21 @@ p{
   padding-bottom:1rem;
   padding-right:0;
   padding-left:0;
-
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 
 .chapter-title{
-  padding-top:3vw;
+  /* padding-top:3vw;
   padding-bottom:1vh;
-  padding-left:0;
+  padding-left:0; */
+  padding: 3vw 3vw;
   font-family:Neue-Machina;
-  font-size: 1.8rem;
-  line-height:2.1rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  word-spacing: -2px;
 }
 
 
@@ -177,9 +178,8 @@ p{
 }
 
 #bibliography{
-  width:95vw;
   font-family:Neue-MachinaLight;
-  font-size: 0.5rem;
+  font-size: 9px;
   line-height:0.8rem;
   display: block;
   margin-block-start: 1em;
@@ -223,6 +223,9 @@ p{
 
 }
 
+.text-footnote {
+  padding:0;
+}
 
 .bodyfig{
   width:100%;
@@ -230,13 +233,11 @@ p{
 
 .body-text-img{
   width:100%;
-  float:left;
-  background:blue;
 }
 
 #fig-caption{
-  width:95%;
-  padding-bottom:1rem;
+  /* width:95%; */
+  /* padding-bottom:1rem; */
   font-family:Neue-MachinaLight;
   font-size:0.7rem;
   line-height:1rem;
@@ -244,11 +245,11 @@ p{
 }
 
 .popuplayer{
-  position:relative;
-  height:0px;
+  /* position:absolute; */
+  height:100vh;
+  width: 100vw;
   z-index:2;
-  float:left;
-  right:0;
+  left: 0;
 /*  left:0.7em;*/
 }
 
@@ -305,9 +306,11 @@ p{
 }
 
 #icon{
-  font-size:1rem;
-  font-family:Neue-Machina;
-  padding-top:0.8rem;
+    padding: 3vw 3vw;
+    font-family: Neue-Machina;
+    font-size: 1.2rem;
+    line-height: 1;
+    word-spacing: -2px;
 }
 
 .myIndex {
@@ -379,7 +382,7 @@ p{
   margin-left:90vw;
   position:relative;
   top:4vh;
-  family-font:Neue-MachinaBold;
+  font-family:Neue-MachinaBold;
   font-size: 2rem;
 }
 
@@ -509,4 +512,29 @@ p{
   height:auto;
   padding-top:0;
   margin-top:0;
+}
+
+p{
+  padding: 0 6vw 0 12vw;
+  line-height: 1.5;
+}
+figcaption{
+  padding: 1vw 6vw 0 12vw;
+  width: auto;
+}
+figure{
+  padding: 3vw 0 6vw 0;
+}
+.body-text-img#portrait{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+#one-title{
+  padding: 6vw 3vw;
+}
+
+.biblio > .body-text{
+  padding: 0vw 3vw;
 }
