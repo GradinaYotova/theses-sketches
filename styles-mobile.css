@@ -201,6 +201,7 @@ body {
   line-height: 1;
   word-spacing: -2px;
   filter:blur(5px);
+  transition: all 0.5s ease-out;
 }
 
 
@@ -217,6 +218,7 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   filter:blur(5px);
+  transition: all 0.5s ease-out;
 }
 
 #bibliography{
@@ -284,6 +286,7 @@ body {
 #lazy{
   width:100%;
   border-radius: 10px;
+  transition: all 0.5s ease-in;
 /*  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
@@ -376,6 +379,7 @@ body {
     line-height: 1;
     word-spacing: -2px;
     filter:blur(5px);
+    transition: all 0.5s ease-out;
     pointer-events:none;
 }
 

@@ -52,3 +52,12 @@
  				 $('lazy').on('load', function(){
 					$(this).addClass('loaded');
 				 });
+
+
+
+
+
+
+
+
+
