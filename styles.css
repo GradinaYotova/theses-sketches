@@ -29,8 +29,6 @@ html{
   -ms-user-select: none;
 }
 
-
-
 *::-webkit-scrollbar {
       display: none;
       -webkit-appearance: none;
@@ -83,11 +81,7 @@ body {
 }
 
 #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img {
-  width:85vw;
-  margin:0;
-  padding:0;
-  box-shadow: 0 0 8px #000;
-
+  width:100%;
 }
 
 

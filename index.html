@@ -27,26 +27,33 @@
 
 				<div id="reveal1">
 					<div class="cross">&times;</div>
-					<video width="320" height="240" autoplay>
-					  <source src="img/video2.mp4" type="video/mp4">
-					</video>
+
 				</div>
 
 				<div id="reveal2">
-					<div class="crosstwo">&times;</div>
-					<img src="img/test2.png">
+					<figure class="reveal-fig">
+						<div class="crosstwo">&times;</div>
+						<a href="https://bengrosser.com/projects/go-rando/"><img class="reveal-img" id="lazyreveal" data-src="img/rando.png"/></a>
+	          			<figcaption class="reveal-figcap">
+	           	 			<a href="https://bengrosser.com/projects/go-rando/">'Go Rando'</a> adopts the strategy of obfuscation to disrupt Facebook’s increasingly fine-grained data collection practices / created by Ben Grosser
+	          			</figcaption>
+	        		</figure>
 				</div>
 
 				<div id="reveal3">
-					<div class="crossthree">&times;</div>
-					<img src="img/message.png">
+					<figure class="reveal-fig">
+						<div class="crossthree">&times;</div>
+	          			<img class="reveal-img" id="lazyreveal" data-src="img/test2.png"/>
+	          			<figcaption class="reveal-figcap">
+	           	 			Recreating the FACS action unit exercises from Scott Eaton in order to study the extend to which Memojis can capture facial expressions
+	          			</figcaption>
+	        		</figure>
+					
 				</div>
 
 				<div id="reveal4">
 					<div class="crossfour">&times;</div>
-					<h1 class="hyper-text">
-		        		How many times did you send laughing emoji, while having a poker face?
-		        	</h1>
+
 				</div>
 			</div>
 
@@ -845,6 +852,7 @@
 		</div>
 
 		<script src="./blur-index.js"></script>
+		<script src="./lazy-load-reveal.js"></script>
 		<script src="./lazy-load.js"></script>
 		<script  src="./modal-script.js"></script>
 		<script  src="./scroll-magic.js"></script>
