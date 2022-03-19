@@ -240,6 +240,24 @@ body {
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 
+#lazy{
+  width:100%;
+  border-radius: 10px;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#lazyportrait{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
 #fig-caption{
   /* width:95%; */
   /* padding-bottom:1rem; */
@@ -530,11 +548,7 @@ figcaption{
 figure{
   padding: 3vw 0 6vw 0;
 }
-.body-text-img#portrait{
-    width: 95%;
-    display: block;
-    margin: 0 auto;
-}
+
 
 #one-title{
   padding: 6vw 3vw;
