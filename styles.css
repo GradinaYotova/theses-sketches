@@ -29,6 +29,8 @@ html{
   -ms-user-select: none;
 }
 
+
+
 *::-webkit-scrollbar {
       display: none;
       -webkit-appearance: none;
@@ -37,9 +39,19 @@ html{
   }
 
 body {
+  visibility:hidden;
   width: 100%;
   padding-bottom: 1vw;
   overflow-x:hidden;  
+}
+
+#desktop{
+  visibility:visible;
+  font-family:Neue-MachinaBold;
+  font-size: 4rem;
+  line-height:2.5rem;
+  padding:0.5em;
+  float:left;
 }
 
 .myBody {

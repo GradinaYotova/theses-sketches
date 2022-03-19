@@ -17,7 +17,9 @@ html{
   overflow-x: hidden;
 }
 
-
+#desktop{
+  display:none;
+}
 *{
   /* font-size: 0; */
   -ms-overflow-style: none;
@@ -42,6 +44,7 @@ html{
 
 
 body {
+  visibility:visible;
   max-width: 100%;
   margin:0 auto;
   padding-bottom: 1vw;
@@ -109,9 +112,16 @@ body {
 
 .title{
   font-family:Neue-MachinaBold;
-  font-size: 2.5rem;
-  line-height:2.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
   padding:0.2em;
+  text-align:center;
+  background-image: url(https://media1.giphy.com/media/ucKA0uD0geUEw/giphy.gif?cid=ecf05e478fmeopqlhe04im04ijrtenc2du749sy97hxvswn2&rid=giphy.gif&ct=g);
+  background-size: 120%;
+  background-position: center;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hyper-text{
@@ -235,17 +245,17 @@ body {
 .body-text-img{
   width:100%;
   border-radius: 10px;
-  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+/*  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
 }
 
 #lazy{
   width:100%;
   border-radius: 10px;
-  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+/*  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
 }
 
 #lazyportrait{
@@ -253,9 +263,9 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+/*    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
 }
 
 #fig-caption{
