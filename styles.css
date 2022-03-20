@@ -15,12 +15,6 @@ html{
   overflow-x: hidden;
 }
 
-.char { transition: color .0s; transition-delay: 5s}
-
-.char:hover { transition-delay: .0s}
-
-
-
 *{
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -69,9 +63,9 @@ body {
   width:100%;
 }
 
-#reveal1, #reveal2, #reveal3, #reveal4, #reveal5,#reveal6  {
+#reveal0, #reveal1, #reveal2, #reveal3, #reveal4, #reveal5,#reveal6  {
   opacity: 0;
-  position:absolute;
+  /* position:absolute; */
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -82,17 +76,22 @@ body {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  top: 20vh;
-  left: 0;
+  /* top: 20vh;
+  left: 0; */
   pointer-events:none;
+  position: fixed;
+  left: 0;
+  top: 250px;
+  max-width: 100%;
+ 
 }
 
-#reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img,#reveal6 img {
+#reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img,#reveal6 img {
   width:100%;
 }
 
 
-#reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible  {
+#reveal0.visible, #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible  {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
@@ -102,15 +101,15 @@ body {
   pointer-events:auto;
 }
 
- 
+/*  
 #reveal1 {top:150vh; left:5vw;}
 #reveal2 {top:300vh;left:5vw;}
 #reveal3 {top:450vh;left:5vw;}
 #reveal4 {top:680vh;left:5vw;} 
 #reveal5 {top:1200vh;left:5vw;} 
-#reveal6 {top:1400vh;left:5vw;} 
+#reveal6 {top:1400vh;left:5vw;}  */
 
-.cross, .crosstwo, .crossthree, .crossfour,.crossfive,.crosssix {
+.crosszero, .cross, .crosstwo, .crossthree, .crossfour,.crossfive,.crosssix {
   /* color: #DC143C;
   text-shadow: 0 0 2px #000; */
 /*  background:#fff;*/
@@ -295,8 +294,11 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  position: -webkit-sticky !important;
-  position: sticky !important;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   top: 0;
   z-index:6;
 }
