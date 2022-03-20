@@ -78,6 +78,7 @@ body {
   transition: all 0.1s ease-in-out;
   top: 20vh;
   left: 0;
+  pointer-events:none;
 }
 
 #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img,#reveal6 img {
@@ -92,6 +93,7 @@ body {
   -ms-transform: none;
   -o-transform: none;
   transform: none;
+  pointer-events:auto;
 }
 
  
