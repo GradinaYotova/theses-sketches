@@ -99,7 +99,6 @@ body {
   -o-transform: none;
   transform: none;
   pointer-events:auto;
-  overflow-y:hidden;
 }
 
 /*  
