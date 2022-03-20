@@ -235,6 +235,7 @@ body {
   margin-inline-end: 0px;  
 }
 
+
 .biblio{
   columns: 1;
 }
@@ -676,3 +677,49 @@ color:#000;
 background:#fff;
 }
 
+
+.gotop{
+  font-family:Neue-Machina;
+  columns: 1;
+  padding:0;
+  position:relative;
+  left:65vw;
+  font-size:1em;
+  padding-bottom:0.5em;
+}
+
+.gotop a{
+  text-decoration:none;
+  color:#000;
+}
+
+.gotop-text{
+  width:100%;
+  padding-left:0;
+  font-family:Neue-Machina;
+  font-size: 1rem;
+  line-height:1.4rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+.credit-text{
+  width:100%;
+  padding-left:0;
+  font-family:Neue-Machina;
+  font-size: 1rem;
+  line-height:1.4rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.biblio > .credit-text {
+    padding: 0vw 3vw;
+}
