@@ -1,29 +1,18 @@
 var controller = new ScrollMagic.Controller();
 
-			new ScrollMagic.Scene({
-			// triggerElement: "#reveal1",
-			triggerElement: "#triggerReveal0",
+		new ScrollMagic.Scene({
+			triggerElement: "#reveal1",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "7%", // hide 10% before exiting view (80% + 10% from bottom)
-			offset: 10 // move trigger to center of element
-			})
-			.setClassToggle("#reveal0", "visible") // add class to reveal
-			.addTo(controller);
-
-			new ScrollMagic.Scene({
-			// triggerElement: "#reveal1",
-			triggerElement: "#triggerReveal1",
-			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "7%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal1", "visible") // add class to reveal
 			.addTo(controller);
 
 			new ScrollMagic.Scene({
-			triggerElement: "#triggerReveal2",
+			triggerElement: "#reveal2",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "7%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal2", "visible") // add class to reveal
@@ -31,9 +20,9 @@ var controller = new ScrollMagic.Controller();
 
 
 			new ScrollMagic.Scene({
-			triggerElement: "#triggerReveal3",
+			triggerElement: "#reveal3",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "7%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal3", "visible") // add class to reveal
@@ -41,33 +30,33 @@ var controller = new ScrollMagic.Controller();
 
 
 			new ScrollMagic.Scene({
-			triggerElement: "#triggerReveal4",
+			triggerElement: "#reveal4",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "7%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal4", "visible") // add class to reveal
 			.addTo(controller);
 
 			new ScrollMagic.Scene({
-			triggerElement: "#triggerReveal5",
+			triggerElement: "#reveal5",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "7%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal5", "visible") // add class to reveal
 			.addTo(controller);
 
 			new ScrollMagic.Scene({
-			triggerElement: "#triggerReveal6",
+			triggerElement: "#reveal6",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "7%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal6", "visible") // add class to reveal
 			.addTo(controller);
 
-var popupzero = $('#reveal0');
+
 var popup = $('#reveal1');
 var popuptwo = $('#reveal2');
 var popupthree = $('#reveal3');
@@ -76,48 +65,30 @@ var popupfive = $('#reveal5');
 var popupsix = $('#reveal6');
 
 
-	$( '.crosszero' ).click(function() {
-	  	// popup.css('display', 'none');
-		  popupzero.removeClass('visible');
-
-		console.log("click reveal 1")
-	});
 
 	$( '.cross' ).click(function() {
-	  	// popup.css('display', 'none');
-		  popup.removeClass('visible');
-
-		console.log("click reveal 1")
+	  	popup.css('display', 'none');
 	});
 	
 	$( '.crosstwo' ).click(function() {
-		// popuptwo.css('display', 'none');
-		popuptwo.removeClass('visible');
-
+		popuptwo.css('display', 'none');
 	});
 
 	$( '.crossthree' ).click(function() {
-		// popupthree.css('display', 'none');
-		popupthree.removeClass('visible');
-
+		popupthree.css('display', 'none');
 	});
 
 	$( '.crossfour' ).click(function() {
-		// popupfour.css('display', 'none');
-		popupfour.removeClass('visible');
-
+		popupfour.css('display', 'none');
 	});
 
 	$( '.crossfive' ).click(function() {
-		// popupfive.css('display', 'none');
-		popupfive.removeClass('visible');
-
+		popupfive.css('display', 'none');
 	});
 
-	$( '.crosssix' ).click(function() {
-		// popupsix.css('display', 'none');
-		popupsix.removeClass('visible');
 
+	$( '.crosssix' ).click(function() {
+		popupsix.css('display', 'none');
 	});
 
 
