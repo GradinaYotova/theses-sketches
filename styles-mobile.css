@@ -236,6 +236,17 @@ body {
   columns: 1;
 }
 
+#credits{
+  font-family:Neue-MachinaLight;
+  font-size: 1rem;
+  line-height:1.3rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;  
+}
+
 .footnote {
     position: relative;
     display: inline-block;
@@ -602,6 +613,25 @@ body {
   margin-top:0;
 }
 
+#nineteen {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  height:auto;
+  top: 0;
+  background:#fff;
+  z-index:2;
+}
+
+
+#twenty {
+  grid-column: 1 / 5;
+  grid-row: 11;
+  height:auto;
+  padding-top:0;
+  margin-top:0;
+}
+
+
 
 p{
   padding: 0 6vw 0 12vw;
@@ -623,3 +653,23 @@ figure{
 .biblio > .body-text{
   padding: 0vw 3vw;
 }
+
+
+
+#portfolio{
+text-decoration:none;
+color:#000;
+}
+
+#portfolio:focus{
+text-decoration:none;
+color:#000;
+background:#fff;
+}
+
+#portfolio:active{
+text-decoration:none;
+color:#000;
+background:#fff;
+}
+
