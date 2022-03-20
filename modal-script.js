@@ -1,6 +1,7 @@
 $( "#icon" ).click(function() {
 	// $('.popuplayer').css('z-index', '5');
-	$('#myIndex').css('display', 'block');			
+	$('#myIndex').css('display', 'block');
+
 });
 
 $( ".close" ).click(function() {

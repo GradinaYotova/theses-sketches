@@ -15,6 +15,12 @@ html{
   overflow-x: hidden;
 }
 
+.char { transition: color .0s; transition-delay: 5s}
+
+.char:hover { transition-delay: .0s}
+
+
+
 *{
   -ms-overflow-style: none;
   scrollbar-width: none;
