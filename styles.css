@@ -82,7 +82,7 @@ body {
   position: fixed;
   left: 0;
   top: 250px;
-  max-width: 100%;
+  max-width: 80%;
  
 }
 
@@ -101,13 +101,6 @@ body {
   pointer-events:auto;
 }
 
-/*  
-#reveal1 {top:150vh; left:5vw;}
-#reveal2 {top:300vh;left:5vw;}
-#reveal3 {top:450vh;left:5vw;}
-#reveal4 {top:680vh;left:5vw;} 
-#reveal5 {top:1200vh;left:5vw;} 
-#reveal6 {top:1400vh;left:5vw;}  */
 
 .crosszero, .cross, .crosstwo, .crossthree, .crossfour,.crossfive,.crosssix {
   /* color: #DC143C;
