@@ -633,7 +633,7 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  padding-bottom:12vh;
+  padding-bottom:11vh;
 }
 
 
@@ -684,7 +684,7 @@ background:#fff;
   columns: 1;
   padding:0;
   position:relative;
-  left:70vw;
+  left:68vw;
   font-size:1em;
   padding-bottom:0.5em;
 }
