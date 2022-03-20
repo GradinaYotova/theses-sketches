@@ -2,10 +2,10 @@
   font-family: Neue-Machina;
   src: url("fonts/Neue-Machina/NeueMachina-Regular.otf");
 }
-@font-face {
+/*@font-face {
   font-family: Neue-MachinaBold;
   src: url("fonts/Neue-Machina/NeueMachina-Ultrabold.otf");
-}
+}*/
 @font-face {
   font-family: Neue-MachinaLight;
   src: url("fonts/Neue-Machina/NeueMachina-Light.otf");
