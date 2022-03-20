@@ -62,7 +62,7 @@ body {
   width:100%;
 } 
 
-#reveal1, #reveal2, #reveal3, #reveal4  {
+#reveal1, #reveal2, #reveal3, #reveal4, #reveal5  {
   opacity: 0;
   position:relative;
   -webkit-transform: scale(0.9);
@@ -119,7 +119,9 @@ body {
 #reveal1 {top:300%;left:5vw;}
 #reveal2 {top:500%;left:5vw;}
 #reveal3 {top:600%;left:5vw;}
-#reveal4 {top:1980%;left:5vw;} 
+#reveal4 {top:1100%;left:5vw;} 
+#reveal5 {top:1570%;left:5vw;} 
+#reveal6 {top:2000%;left:5vw;}
 
 
 #lazyreveal{
@@ -128,7 +130,7 @@ body {
 }
 
 
-.cross, .crosstwo, .crossthree, .crossfour {
+.cross, .crosstwo, .crossthree, .crossfour, .crossfive,.crosssix {
   color: #000;
   margin-left:0rem;
   padding-left:0.5em;
