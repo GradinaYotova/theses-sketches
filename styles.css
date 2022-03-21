@@ -82,9 +82,9 @@ body {
   pointer-events:none;
   position: fixed;
   left: 0;
-  top: 250px;
+  top: 130px;
   max-width: 80%;
-  max-height:20%;
+/*  max-height:20%;*/
 }
 
 #reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img,#reveal6 img {
@@ -107,7 +107,7 @@ body {
   /* color: #DC143C;
   text-shadow: 0 0 2px #000; */
 /*  background:#fff;*/
-   margin-left:0rem;
+  margin-left:0rem;
   padding-left:0.2em;
   font-size: 2rem;
   width:100vw; 
@@ -253,6 +253,7 @@ body {
   z-index:2;
   height:100vh;
   width: 100vw;
+
 }
 
 .wrapper {
@@ -557,7 +558,7 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  padding-bottom:11vh;
+  padding-bottom:1vh;
 }
 
 
