@@ -54,7 +54,7 @@ body {
 .myBody {
   height: 100vh;
   position:relative; 
-  overscroll-behavior: contain;
+ /* overscroll-behavior: contain;*/
 }
 
 
@@ -334,7 +334,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1vw;
   grid-auto-rows: auto;
-/*  padding:1vw;*/
+  padding:1vw;
 }
 
 
@@ -401,8 +401,8 @@ body {
   height: 100%; 
   margin:0;
   overflow-y:hidden;
-  overflow-x:hidden;
-  overscroll-behavior: contain; 
+  overflow-x:hidden;/*
+  overscroll-behavior: contain; */
 }
 
 .myIndex-modal-container{
