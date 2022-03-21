@@ -3,7 +3,7 @@ var controller = new ScrollMagic.Controller();
 		new ScrollMagic.Scene({
 			triggerElement: "#TriggerReveal1",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "10%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal1", "visible") // add class to reveal
