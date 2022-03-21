@@ -3,7 +3,7 @@ var controller = new ScrollMagic.Controller();
 		new ScrollMagic.Scene({
 			triggerElement: "#reveal1",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "10%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "20%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal1", "visible") // add class to reveal
@@ -12,7 +12,7 @@ var controller = new ScrollMagic.Controller();
 			new ScrollMagic.Scene({
 			triggerElement: "#reveal2",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "20%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal2", "visible") // add class to reveal
@@ -22,7 +22,7 @@ var controller = new ScrollMagic.Controller();
 			new ScrollMagic.Scene({
 			triggerElement: "#reveal3",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "20%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal3", "visible") // add class to reveal
@@ -32,7 +32,7 @@ var controller = new ScrollMagic.Controller();
 			new ScrollMagic.Scene({
 			triggerElement: "#reveal4",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "20%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal4", "visible") // add class to reveal
@@ -41,7 +41,7 @@ var controller = new ScrollMagic.Controller();
 			new ScrollMagic.Scene({
 			triggerElement: "#reveal5",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "20%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal5", "visible") // add class to reveal
@@ -50,7 +50,7 @@ var controller = new ScrollMagic.Controller();
 			new ScrollMagic.Scene({
 			triggerElement: "#reveal6",
 			triggerHook: 0.4, // show, when scrolled 10% into view
-			duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+			duration: "20%", // hide 10% before exiting view (80% + 10% from bottom)
 			offset: 10 // move trigger to center of element
 			})
 			.setClassToggle("#reveal6", "visible") // add class to reveal
