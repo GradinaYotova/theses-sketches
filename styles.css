@@ -289,8 +289,8 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   top: 0;
   z-index:6;
 }
@@ -312,7 +312,7 @@ body {
 
 .myIndex {
   display: none; 
-/*  position: fixed;*/
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%; 
@@ -320,7 +320,7 @@ body {
   margin:0;
   overflow-y:auto;
   overflow-x:hidden;
-/*  overscroll-behavior: contain; */
+  overscroll-behavior: contain; 
 }
 
 .myIndex-modal-container{
@@ -388,8 +388,8 @@ body {
 
 
 #three {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   -webkit-transform: translate3d(0,0,0);
   -webkit-backface-visibility: hidden;
@@ -409,8 +409,8 @@ body {
 
 
 #five {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   -webkit-transform: translate3d(0,0,0);
   -webkit-backface-visibility: hidden;
@@ -429,8 +429,8 @@ body {
 }
 
 #seven {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   top: 0;
   background:#fff;
@@ -448,8 +448,8 @@ body {
 
 
 #nine {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   top: 0;
   background:#fff;
@@ -467,8 +467,8 @@ body {
 
 
 #eleven {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   top: 0;
   background:#fff;
@@ -485,8 +485,8 @@ body {
 }
 
 #thirteen {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   top: 0;
   background:#fff;
@@ -503,8 +503,8 @@ body {
 }
 
 #fiveteen {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   top: 0;
   background:#fff;
@@ -521,8 +521,8 @@ body {
 }
 
 #seventeen {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   top: 0;
   background:#fff;
@@ -540,8 +540,8 @@ body {
 
 
 #nineteen {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+/*  position: -webkit-sticky !important;
+  position: sticky !important;*/
   height:auto;
   top: 0;
   background:#fff;
