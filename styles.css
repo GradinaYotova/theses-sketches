@@ -37,9 +37,11 @@ html{
   }
 
 body {
+  position:absolute;
   visibility:hidden;
   width: 100%;
-  padding-bottom: 1vw;
+  height:auto;
+  /*padding-bottom: 1vw;*/
   overflow-x:hidden;  
 }
 
