@@ -394,7 +394,7 @@ body {
 
 .myIndex {
   display: none; 
-  position: fixed;
+/*  position: fixed;*/
   left: 0;
   top: 0;
   width: 100%; 
@@ -402,7 +402,7 @@ body {
   margin:0;
   overflow-y:hidden;
   overflow-x:hidden;
-  overscroll-behavior: contain; 
+/*  overscroll-behavior: contain; */
 }
 
 .myIndex-modal-container{
