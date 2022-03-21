@@ -117,7 +117,7 @@ body {
   transform: none;
 }
 
-#reveal1 {top:300%;left:5vw;}
+#reveal1 {top:320%;left:5vw;}
 #reveal2 {top:500%;left:5vw;}
 #reveal3 {top:600%;left:5vw;}
 #reveal4 {top:1100%;left:5vw;} 
@@ -146,12 +146,6 @@ body {
   line-height: 5.5rem;
   padding:0.2em;
   text-align:center;
-  background-image: url("img/title-gif.gif");
-  background-size: 120%;
-  background-position: center;
-  color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .hyper-text{
@@ -406,7 +400,7 @@ body {
   width: 100%; 
   height: 100%; 
   margin:0;
-  overflow-y:auto;
+  overflow-y:hidden;
   overflow-x:hidden;
   overscroll-behavior: contain; 
 }
@@ -443,8 +437,8 @@ body {
 
 .index-title{
   position:relative;
-  font-size: 1.3em;
-  line-height:1.5em;
+  font-size: 1.2em;
+  line-height:1.3em;
   padding:0.5em;
   padding-left:30px;
   display:block;
