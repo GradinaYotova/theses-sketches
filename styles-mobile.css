@@ -75,7 +75,7 @@ body {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-/*  position: fixed;*/
+  position: fixed;
   left: 0;
   bottom: 200px;
   max-width: 90%;

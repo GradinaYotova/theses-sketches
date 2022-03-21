@@ -79,10 +79,10 @@ body {
   /* top: 20vh;
   left: 0; */
   pointer-events:none;
-/*  position: fixed;*/
+  position: fixed;
   left: 0;
-  bottom: 200px;
-  max-width: 90%;
+  top: 250px;
+  max-width: 80%;
  
 }
 
