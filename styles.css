@@ -96,7 +96,7 @@ body {
 
 #reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img,#reveal6 img {
   width:100%;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 
@@ -108,7 +108,7 @@ body {
   -o-transform: none;
   transform: none;
   pointer-events:auto;
-  transition: all 0.2s ease-in; 
+  transition: all 0.5s ease-in; 
 }
 
 

@@ -91,7 +91,7 @@ body {
   left: 0;
   top: 130px;
   max-width: 80%;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 
@@ -111,7 +111,7 @@ body {
   width: 100%;
   margin:0;
   padding:0;
-  transition: all 0.2s ease-in; 
+  transition: all 0.5s ease-in; 
 }
 
 
@@ -451,8 +451,8 @@ body {
 
 .index-title{
   position:relative;
-  font-size: 1.3em;
-  line-height:1.5em;
+  font-size: 1.1em;
+  line-height:1.2em;
   padding:0.5em;
   padding-left:30px;
   display:block;
