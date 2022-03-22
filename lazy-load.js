@@ -49,9 +49,9 @@
 				})
 
 
- 				 $('lazy').on('load', function(){
-					$(this).addClass('loaded');
-				 });
+ 				//  $('lazy').on('load', function(){
+					// $(this).addClass('loaded');
+				 // });
 
 
 

@@ -5,11 +5,13 @@
 @font-face {
   font-family: Neue-MachinaBold;
   src: url("fonts/Neue-Machina/NeueMachina-Ultrabold.otf");
+
 }
 @font-face {
   font-family: Neue-MachinaLight;
   src: url("fonts/Neue-Machina/NeueMachina-Light.otf");
 }
+
 
 @media screen and (max-width: 844px) {
 
@@ -55,7 +57,6 @@ body {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position:relative; 
-/*  overscroll-behavior: contain;*/
 }
 
 
@@ -63,9 +64,19 @@ body {
   width:100%;
 } 
 
+
+
+.popuplayer{
+  position:absolute; 
+  height:auto;
+  width: 100vw;
+  z-index:2;
+  left: 0;
+}
+
+
 #reveal0, #reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #reveal6  {
   opacity: 0;
-  /* position:relative; */
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -80,7 +91,10 @@ body {
   left: 0;
   top: 130px;
   max-width: 80%;
+  transition: all 0.2s ease-in;
 }
+
+
 
 .reveal-fig{
   width:90%;
@@ -97,9 +111,9 @@ body {
   width: 100%;
   margin:0;
   padding:0;
-  
-
+  transition: all 0.2s ease-in; 
 }
+
 
 .reveal-figcap {
   width:95%;
@@ -124,6 +138,7 @@ body {
 }
 
 
+
 #lazyreveal{
   max-width:100%;
   height:auto;
@@ -138,6 +153,8 @@ body {
   max-width:100%;
   max-height:100%; 
 }
+
+
 
 .title{
   font-family:Neue-MachinaBold;
@@ -291,8 +308,9 @@ body {
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
 }
 
-#lazy{
+.lazy{
   width:100%;
+  height: auto;
   border-radius: 10px;
   transition: all 0.5s ease-in;
 /*  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
@@ -305,6 +323,7 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+    transition: all 0.5s ease-in;
 /*    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
     box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
@@ -317,15 +336,6 @@ body {
   font-size:0.7rem;
   line-height:1rem;
   text-indent:0;
-}
-
-.popuplayer{
-  /* position:absolute; */
-  height:100vh;
-  width: 100vw;
-  z-index:2;
-  left: 0;
-/*  left:0.7em;*/
 }
 
 .wrapper {
