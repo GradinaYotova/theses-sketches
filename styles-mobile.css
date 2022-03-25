@@ -60,7 +60,7 @@ body {
   z-index:7;
 }
 
-#reveal0, #reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #reveal6  {
+#reveal0, #reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #reveal6, #reveal7, #reveal8, #reveal9, #reveal10, #reveal11, #reveal12, #reveal13  {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -79,7 +79,7 @@ body {
   transition: all 0.5s ease-in;
 }
 
-#reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img,#reveal6 img {
+#reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img, #reveal6 img, #reveal7 img, #reveal8 img, #reveal9 img, #reveal10 img, #reveal11 img, #reveal12 img, #reveal13 img {
   width:100%;
   transition: all 0.5s ease-in;
 }
@@ -93,7 +93,7 @@ body {
   border-radius: 10px;
 }
 
-#reveal0.visible, #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible  {
+#reveal0.visible, #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible, #reveal7.visible, #reveal8.visible, #reveal9.visible, #reveal10.visible, #reveal11.visible, #reveal12.visible, #reveal13.visible  {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
@@ -137,7 +137,7 @@ body {
   height:auto;
 }
 
-.crosszero, .cross, .crosstwo, .crossthree, .crossfour, .crossfive,.crosssix {
+.crosszero, .cross, .crosstwo, .crossthree, .crossfour, .crossfive, .crosssix, .crossseven, .crosseight, .crossnine, .crossten, .crosseleven, .crosstwelve, .crossthirteen {
   color: #000;
   margin-left:0rem;
   padding-left:0.5em;
