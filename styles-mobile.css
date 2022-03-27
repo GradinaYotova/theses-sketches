@@ -60,7 +60,7 @@ body {
   z-index:7;
 }
 
-#reveal0, #reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #reveal6, #reveal7, #reveal8, #reveal9, #reveal10, #reveal11, #reveal12, #reveal13  {
+#reveal0, #reveal1, #reveal2, #reveal3, #reveal4, #reveal5, #reveal6, #reveal7, #reveal8, #reveal9, #reveal10, #reveal11, #reveal12, #reveal13, #reveal14  {
   opacity: 0;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -76,12 +76,28 @@ body {
   left: 0;
   top: 130px;
   max-width: 80%;
-  transition: all 0.5s ease-in;
+  padding: 10px 20px;
 }
 
-#reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img, #reveal6 img, #reveal7 img, #reveal8 img, #reveal9 img, #reveal10 img, #reveal11 img, #reveal12 img, #reveal13 img {
+
+#reveal12, #reveal13{
+  top: 60px;
+}
+
+
+
+#reveal14{
+  width:90%;
+  background-color: #fff;
+  box-shadow: 0 0 8px #000;
+  border-radius: 10px;
+  left: 5%;
+  top: 10px;
+}
+
+#reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img, #reveal6 img, #reveal7 img, #reveal8 img, #reveal9 img, #reveal10 img, #reveal11 img, #reveal12 img, #reveal13 img, #reveal14 img {
   width:100%;
-  transition: all 0.5s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .reveal-fig{
@@ -93,7 +109,7 @@ body {
   border-radius: 10px;
 }
 
-#reveal0.visible, #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible, #reveal7.visible, #reveal8.visible, #reveal9.visible, #reveal10.visible, #reveal11.visible, #reveal12.visible, #reveal13.visible  {
+#reveal0.visible, #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible, #reveal7.visible, #reveal8.visible, #reveal9.visible, #reveal10.visible, #reveal11.visible, #reveal12.visible, #reveal13.visible, #reveal14.visible  {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
@@ -101,14 +117,18 @@ body {
   -o-transform: none;
   transform: none;
   pointer-events:auto;
-  transition: all 0.5s ease-in; 
 }
 
 .reveal-img {
   width: 100%;
   margin:0;
   padding:0;
-  transition: all 0.5s ease-in; 
+  transition: all 0.6s ease-in;
+}
+
+
+.reveal-fig {
+  transition: all 0.6s ease-in;
 }
 
 .reveal-figcap {
@@ -130,14 +150,16 @@ body {
   -ms-transform: none;
   -o-transform: none;
   transform: none;
+  transition: all 0.6s ease-in;
 }
 
 #lazyreveal{
   max-width:100%;
   height:auto;
+  transition: all 0.6s ease-in;
 }
 
-.crosszero, .cross, .crosstwo, .crossthree, .crossfour, .crossfive, .crosssix, .crossseven, .crosseight, .crossnine, .crossten, .crosseleven, .crosstwelve, .crossthirteen {
+.crosszero, .cross, .crosstwo, .crossthree, .crossfour, .crossfive, .crosssix, .crossseven, .crosseight, .crossnine, .crossten, .crosseleven, .crosstwelve, .crossthirteen, .crossfourteen {
   color: #000;
   margin-left:0rem;
   padding-left:0.5em;
@@ -145,7 +167,9 @@ body {
   max-width:100%;
   max-height:100%; 
 }
-
+.crossfourteen{
+  margin-bottom: 20px;
+}
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -343,27 +367,6 @@ body {
   will-change: scroll;
 }
 
-#nineteen {
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  display:block;
-  height:auto;
-  top: 0;
-  margin:0;
-  background:#fff;
-  will-change: scroll;
-}
-
-#twenty {
-  grid-column: 1 / 5;
-  grid-row: 11;
-  height:auto;
-  padding-top:0;
-  margin-top:0;
-  padding-bottom:1vh;
-  will-change: scroll;
-}
-
 .title{
   font-family:Neue-MachinaBold;
   font-size: 5.5rem;
@@ -434,7 +437,6 @@ body {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
-}
 
 .index-title{
   position:relative;
@@ -569,18 +571,19 @@ body {
 }
 
 .biblio{
-  columns: 1;
+  width: auto;
+  padding-bottom: 15px;
 }
 
 #credits{
   font-family:Neue-MachinaLight;
-  font-size: 1rem;
-  line-height:1.3rem;
+  font-size: 0.9rem;
   display: block;
-  margin-block-start: 1em;
+  /* margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
-  margin-inline-end: 0px;  
+  margin-inline-end: 0px;   */
+  margin: 4px 0;
 }
 
 .credit-text{
@@ -598,6 +601,7 @@ body {
 
 .biblio > .credit-text {
     padding: 0vw 3vw;
+    margin: 0;
 }
 
 .biblio > .body-text{
