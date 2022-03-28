@@ -2,7 +2,6 @@
   font-family: Neue-Machina;
   src: url("fonts/Neue-Machina/NeueMachina-Regular.otf");
 }
-
 @font-face {
   font-family: Neue-MachinaBold;
   src: url("fonts/Neue-Machina/NeueMachina-Ultrabold.otf");
@@ -13,8 +12,6 @@
   src: url("fonts/Neue-Machina/NeueMachina-Light.otf");
 }
 
-@media screen and (max-width: 844px) {
-
 html{
   overflow-x: hidden;
    overscroll-behavior: none;
@@ -24,7 +21,7 @@ html{
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin:0;
-  user-drag: none; 
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -40,6 +37,7 @@ html{
   }
 
 body {
+  position:absolute;
   max-width: 100%;
   margin:0 auto;
   overflow-x:hidden;
@@ -72,36 +70,42 @@ body {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  pointer-events:none;
   position: fixed;
-  left: 0;
+  left: 650px;
   top: 130px;
   max-width: 80%;
-  padding: 10px 20px;
 }
 
-
-#reveal12, #reveal13{
+#reveal12  {
   top: 60px;
 }
 
-
+#reveal13  {
+  top: 40px;
+}
 
 #reveal14{
-  width:90%;
+  width:40%;
   background-color: #fff;
   box-shadow: 0 0 8px #000;
   border-radius: 10px;
-  left: 5%;
-  top: 10px;
+  left: 700px;
+  top: 20px;
 }
+
 
 #reveal0 img, #reveal1 img, #reveal2 img, #reveal3 img, #reveal4 img, #reveal5 img, #reveal6 img, #reveal7 img, #reveal8 img, #reveal9 img, #reveal10 img, #reveal11 img, #reveal12 img, #reveal13 img, #reveal14 img {
   width:100%;
   transition: all 0.6s ease-in;
 }
 
+.reveal-fig {
+  transition: all 0.6s ease-in;
+}
+
 .reveal-fig{
-  width:90%;
+  width:30%;
   padding:0;
   margin: 0 auto;
   background:#fff;
@@ -109,7 +113,7 @@ body {
   border-radius: 10px;
 }
 
-#reveal0.visible, #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible, #reveal7.visible, #reveal8.visible, #reveal9.visible, #reveal10.visible, #reveal11.visible, #reveal12.visible, #reveal13.visible, #reveal14.visible  {
+#reveal0.visible, #reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible, #reveal6.visible, #reveal7.visible, #reveal8.visible, #reveal9.visible, #reveal10.visible, #reveal11.visible, #reveal12.visible, #reveal13.visible, #reveal14.visible {
   opacity: 1;
   -webkit-transform: none;
   -moz-transform: none;
@@ -119,20 +123,8 @@ body {
   pointer-events:auto;
 }
 
-.reveal-img {
-  width: 100%;
-  margin:0;
-  padding:0;
-  transition: all 0.6s ease-in;
-}
-
-
-.reveal-fig {
-  transition: all 0.6s ease-in;
-}
-
 .reveal-figcap {
-  width:95%;
+  width:70%;
   font-family:Neue-Machina;
   font-size:0.8rem;
   line-height:1rem;
@@ -141,7 +133,15 @@ body {
 
 .reveal-figcap a{
   color:#000;
+
 }
+
+img.reveal-img { 
+  transition: all .5s;
+  opacity: 0;
+  }
+img.lazy:not(.reveal-img) { opacity: 1 };
+
 
 .reveal-img.visible  {
   opacity: 1;
@@ -160,16 +160,13 @@ body {
 }
 
 .crosszero, .cross, .crosstwo, .crossthree, .crossfour, .crossfive, .crosssix, .crossseven, .crosseight, .crossnine, .crossten, .crosseleven, .crosstwelve, .crossthirteen, .crossfourteen {
-  color: #000;
   margin-left:0rem;
-  padding-left:0.5em;
-  font-size: 2rem;
-  max-width:100%;
-  max-height:100%; 
+  padding-left:0.2em;
+  font-size: 2.7rem;
+  width:100vw; 
+  cursor: pointer;
 }
-.crossfourteen{
-  margin-bottom: 20px;
-}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -179,19 +176,16 @@ body {
 }
 
 #one {
-  z-index:1;
   grid-column: 1 / 5;
   grid-row: 1;
   height:auto;
   padding-top:1.5vh;
   margin-top:0;
   background:#fff;
-  border-bottom: 0px solid #000;
-
 }
 
 .two {
-  grid-column: 4 / 5;
+  grid-column: 5 / 5;
   grid-row: 2;
   height:auto;
   padding-top:0;
@@ -201,6 +195,7 @@ body {
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
+  background:#fff;
   top: 0;
   z-index:6;
 }
@@ -208,13 +203,12 @@ body {
 #three {
   position: -webkit-sticky !important;
   position: sticky !important;
-  display:block;
   height:auto;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
   top: 0;
-  margin:0;
   background:#fff;
-  will-change: scroll;
-
+  z-index:2;
 }
 
 #four {
@@ -223,19 +217,17 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  will-change: scroll;
-
 }
 
 #five {
   position: -webkit-sticky !important;
   position: sticky !important;
-  display:block;
   height:auto;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
   top: 0;
-  margin:0;
   background:#fff;
-  will-change: scroll;
+  z-index:2;
 }
 
 #six {
@@ -244,18 +236,15 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  will-change: scroll;
 }
 
 #seven {
   position: -webkit-sticky !important;
   position: sticky !important;
-  display:block;
   height:auto;
   top: 0;
-  margin:0;
   background:#fff;
-  will-change: scroll;
+  z-index:2;
 }
 
 #eight {
@@ -264,18 +253,15 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  will-change: scroll;
 }
 
 #nine {
   position: -webkit-sticky !important;
   position: sticky !important;
-  display:block;
   height:auto;
   top: 0;
-  margin:0;
   background:#fff;
-  will-change: scroll;
+  z-index:2;
 }
 
 #ten {
@@ -284,18 +270,15 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  will-change: scroll;
 }
 
 #eleven {
   position: -webkit-sticky !important;
   position: sticky !important;
-  display:block;
   height:auto;
   top: 0;
-  margin:0;
   background:#fff;
-  will-change: scroll;
+  z-index:2;
 }
 
 #twelve {
@@ -304,18 +287,15 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  will-change: scroll;
 }
 
 #thirteen {
   position: -webkit-sticky !important;
   position: sticky !important;
-  display:block;
   height:auto;
   top: 0;
-  margin:0;
   background:#fff;
-  will-change: scroll;
+  z-index:2;
 }
 
 #fourteen {
@@ -324,18 +304,15 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  will-change: scroll;
 }
 
 #fiveteen {
   position: -webkit-sticky !important;
   position: sticky !important;
-  display:block;
   height:auto;
   top: 0;
-  margin:0;
   background:#fff;
-  will-change: scroll;
+  z-index:2;
 }
 
 #sixteen {
@@ -344,7 +321,6 @@ body {
   height:auto;
   padding-top:0;
   margin-top:0;
-  will-change: scroll;
 }
 
 .title{
@@ -352,27 +328,27 @@ body {
   font-size: 5.5rem;
   line-height: 5.5rem;
   padding:0.2em;
-  text-align:center;
+  text-align:left;
 }
-
+ 
 #one-title{
   padding: 6vw 3vw;
 }
- 
+
 .subtitle{
-  font-family:Neue-MachinaLight;
+ font-family:Neue-MachinaLight;
   font-size: 0.9rem;
   line-height:1.3rem;
   padding:0.5em;
   padding-bottom:2em;
   margin-top: 0;
-  text-align:center;
+  text-align:left;
 }
 
 #icon{
-    padding: 3vw 3vw;
+    padding: 1vw 1vw;
     font-family: Neue-Machina;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1;
     word-spacing: -2px;
     filter:blur(5px);
@@ -391,8 +367,6 @@ body {
   margin:0;
   overflow-y:auto;
   overflow-x:hidden;
-  z-index: 10;
-
 }
 
 .myIndex-modal-container{
@@ -401,14 +375,15 @@ body {
   height:auto;
 }
 
+
 .index-content {
   background-color: transparent;
-  margin: auto;
+  margin-left: auto !important;
   padding: 1em;
   border: 0px;
   border-radius: 6px;
   margin:1rem;
-  width: 83.5%;
+  width: 30%;
   display:block;
 }
 
@@ -417,10 +392,10 @@ body {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
-
+}
 .index-title{
   position:relative;
-  font-size: 1.1em;
+  font-size: 1.5em;
   line-height:1;
   padding:0.5em;
   padding-left:30px;
@@ -428,7 +403,7 @@ body {
   font-family: Neue-MachinaBold;
   text-decoration: none;
   color:#000;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 .index-title::before{
@@ -441,18 +416,19 @@ body {
 .close {
   color: #000;
   float: center;
-  margin-left:90vw;
+  margin-left:97vw;
   position:relative;
   top:4vh;
-  font-family:Neue-MachinaBold;
+  family-font:Neue-MachinaBold;
   font-size: 2rem;
   display: block;
+  cursor: pointer;
 }
 
 .chapter-title{
-  padding: 3vw 3vw;
+  padding: 1vw 1vw;
   font-family:Neue-Machina;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1;
   word-spacing: -2px;
   filter:blur(5px);
@@ -460,7 +436,7 @@ body {
 }
 
 .body-text{
-  width:100%;
+  width:80%;
   padding-left:0;
   font-family:Neue-MachinaLight;
   font-size: 1rem;
@@ -478,21 +454,29 @@ body {
   width:100%;
 }
 
+
 .body-text-img{
   width:100%;
 }
 
+img.body-text-img { 
+  transition: all .5s;
+  opacity: 0;
+  }
+img.lazy:not(.body-text-img) { opacity: 1 };
+
+
 .lazy{
-  width:100%;
+  width:50%;
   height: auto;
   transition: all 0.5s ease-in;
 }
 
 #lazyportrait{
-    width: 95%;
+    width: 50%;
+    height: auto;
     display: block;
-    margin: 0 auto;
-/*    border-radius: 10px;*/
+    /* margin: 0 auto; */
     transition: all 0.5s ease-in;
 }
 
@@ -541,8 +525,24 @@ body {
 
 #bibliography{
   font-family:Neue-MachinaLight;
-  font-size: 9px;
-  line-height:0.8rem;
+  font-size: 0.8em;
+  line-height:1.2em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;   
+}
+
+.biblio{
+  columns: 1;
+  width: 80%;
+}
+
+#credits{
+  font-family:Neue-MachinaLight;
+  font-size: 0.8rem;
+  line-height:1.3rem;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -550,27 +550,11 @@ body {
   margin-inline-end: 0px;  
 }
 
-.biblio{
-  width: auto;
-  padding-bottom: 15px;
-}
-
-#credits{
-  font-family:Neue-MachinaLight;
-  font-size: 0.9rem;
-  display: block;
-  /* margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;   */
-  margin: 4px 0;
-}
-
 .credit-text{
   width:100%;
   padding-left:0;
   font-family:Neue-Machina;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height:1.4rem;
   display: block;
   margin-block-start: 1em;
@@ -581,39 +565,39 @@ body {
 
 .biblio > .credit-text {
     padding: 0vw 3vw;
-    margin: 0;
-}
-
-.biblio > .body-text{
-  padding: 0vw 3vw;
 }
 
 p{
   padding: 0 6vw 0 12vw;
   line-height: 1.5;
 }
+
+figcaption p{
+  padding: 0 6vw 0 6vw;
+  line-height: 1.5;
+}
+
 figcaption{
   padding: 1vw 6vw 0 12vw;
   width: auto;
 }
-
 figure{
   padding: 3vw 0 6vw 0;
 }
 
 .gotop{
-  font-family:Neue-Machina;
   columns: 1;
   padding:0;
   position:relative;
-  left:83vw;
+  left:93vw;
   font-size:1em;
+  padding-bottom:0.5em;
 }
 
 .gotop a{
   text-decoration:none;
   color:#000;
-}
+} 
 
 .gotop-text{
   width:100%;
